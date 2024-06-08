@@ -48,7 +48,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
      
     </section>
     
-      {/* <main>
+      /* <main>
         {children}
       </main>
       <Footer />
