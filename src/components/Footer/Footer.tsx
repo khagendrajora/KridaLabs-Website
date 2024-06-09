@@ -1,15 +1,14 @@
-// import { ReactNode } from "react";
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-black py-8 px-4 sm:px-12 md:px-28 lg:px-48">
+    <footer className="bg-white text-black py-8 px-[120px]"> {/* Set padding-left and padding-right to 120px */}
         {/* Separator Line */}
       <hr className="border-t-2 border-gray-200 my-8" /> {/* Horizontal line */}
 
-      <div className="flex flex-wrap justify-end gap-0">
+      <div className="flex flex-wrap justify-between	 gap-0">
         {/* Company Info Section */}
-        <div className="flex flex-col w-full sm:w-1/2 lg:w-1/5 gap-4">
+        <div className="flex flex-col w-full sm:w-1/2 lg:w-1/6 gap-4">
           <h2 className="text-2xl font-bold">KridaLabs</h2>
           <p className="text-sm">
             abc
@@ -17,7 +16,7 @@ export default function Footer() {
         </div>
 
         {/* What We Do Section */}
-        <div className="w-full sm:w-1/2 lg:w-1/5 flex flex-col gap-2">
+        <div className="w-full sm:w-1/2 lg:w-1/6 flex flex-col gap-2">
           <h2 className="text-2xl font-bold">What We Do</h2>
           <ul className="space-y-2 text-sm">
             <li><a href="#" className="hover:underline">Web Design</a></li>
@@ -28,7 +27,7 @@ export default function Footer() {
         </div>
 
         {/* Company Section */}
-        <div className="w-full sm:w-1/2 lg:w-1/5 flex flex-col gap-2">
+        <div className="w-full sm:w-1/2 lg:w-1/6 flex flex-col gap-2">
           <h2 className="text-2xl font-bold">Company</h2>
           <ul className="space-y-2 text-sm">
             <li><a href="#" className="hover:underline">About Us</a></li>
@@ -38,7 +37,7 @@ export default function Footer() {
         </div>
 
         {/* Support Section */}
-        <div className="w-full sm:w-1/2 lg:w-1/5 flex flex-col gap-2">
+        <div className="w-full sm:w-1/2 lg:w-1/6 flex flex-col gap-2">
           <h2 className="text-2xl font-bold">Support</h2>
           <ul className="space-y-2 text-sm">
             <li><a href="#" className="hover:underline">FAQs</a></li>
@@ -48,7 +47,7 @@ export default function Footer() {
         </div>
 
         {/* Contact Section */}
-        <div className="w-full sm:w-1/2 lg:w-1/5 flex flex-col gap-2">
+        <div className="w-full sm:w-1/2 lg:w-1/6 flex flex-col gap-2  ">
           <h2 className="text-2xl font-bold">Contact</h2>
           <ul className="space-y-2 text-sm">
             <li><a href="#" className="hover:underline">Email Us</a></li>
@@ -74,7 +73,7 @@ export default function Footer() {
       <hr className="border-t-2 border-gray-200 my-8" /> {/* Horizontal line */}
 
       {/* Copyright Section */}
-      <div className="text-center text-sm mt-4 text-gray-400	">
+      <div className="text-center text-sm mt-4 text-gray-400">
         Copyright © 2024 KridaLabs. All rights reserved.
       </div>
     </footer>

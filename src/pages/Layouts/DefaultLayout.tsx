@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
+// import Header from "../../components/Header/Header";
 
 
 export default function DefaultLayout({ children }: { children: ReactNode }) {
@@ -48,7 +48,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
      
     </section>
     
-      /* <main>
+      <main>
         {children}
       </main>
       <Footer />
