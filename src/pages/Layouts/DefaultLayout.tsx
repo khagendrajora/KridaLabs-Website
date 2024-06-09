@@ -41,14 +41,32 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
               Get Started
             </button>
           </div>
-          <div className="w-[754px] h-[512px]">
-            <img
-              src="https://cdn.pixabay.com/photo/2022/10/04/21/25/xr-7499160_1280.jpg"
-              alt="Tech Illustration"
-              className="rounded-lg shadow-lg border-bottom-left-radius"
-              style={{ borderBottomLeftRadius: '40%' }}
-            />
-          </div>
+          <div className="relative w-[754px] h-[512px]">
+      <div 
+        className="absolute top-0 left-0 ml-[-63px] bg-blue-500 w-[129px] h-[129px] rounded-full z-0"
+        style={{
+          zIndex: 0,
+        }}
+      ></div>
+      <div 
+        className="absolute top-[370px] left-[396px] bg-yellow-200 w-[178px] h-[178px] z-0 "
+        style={{
+          borderBottomRightRadius: '50%',
+          zIndex: 0,
+          
+        }}
+      ></div>
+      <img
+        src="https://cdn.pixabay.com/photo/2022/10/04/21/25/xr-7499160_1280.jpg"
+        alt="Tech Illustration"
+        className="rounded-lg shadow-lg border-bottom-left-radius z-10"
+        style={{ 
+          borderBottomLeftRadius: '40%',
+          position: 'relative', 
+          zIndex: 10,
+        }}
+      />
+    </div>
 
         </section>
         <Services />
