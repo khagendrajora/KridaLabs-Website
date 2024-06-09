@@ -1,15 +1,15 @@
-// import { ReactNode } from "react";
+
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-black py-8 px-4 sm:px-12 md:px-28 lg:px-48">
-        {/* Separator Line */}
-      <hr className="border-t-2 border-gray-200 my-8" /> {/* Horizontal line */}
+    <footer className="bg-white text-black py-8 px-2 sm:px-12 md:px-28 lg:px-36">
+      {/* Separator Line */}
+      <hr className="border-gray-200 my-8" /> {/* Horizontal line */}
 
-      <div className="flex flex-wrap justify-end gap-0">
+      <div className="flex justify-between flex-wrap ">
         {/* Company Info Section */}
-        <div className="flex flex-col w-full sm:w-1/2 lg:w-1/5 gap-4">
+        <div className="flex flex-col">
           <h2 className="text-2xl font-bold">KridaLabs</h2>
           <p className="text-sm">
             abc
@@ -17,18 +17,18 @@ export default function Footer() {
         </div>
 
         {/* What We Do Section */}
-        <div className="w-full sm:w-1/2 lg:w-1/5 flex flex-col gap-2">
+        <div className=" flex flex-col">
           <h2 className="text-2xl font-bold">What We Do</h2>
           <ul className="space-y-2 text-sm">
             <li><a href="#" className="hover:underline">Web Design</a></li>
             <li><a href="#" className="hover:underline">App Design</a></li>
             <li><a href="#" className="hover:underline">Social Media Manage</a></li>
-            
+
           </ul>
         </div>
 
         {/* Company Section */}
-        <div className="w-full sm:w-1/2 lg:w-1/5 flex flex-col gap-2">
+        <div className=" flex flex-col">
           <h2 className="text-2xl font-bold">Company</h2>
           <ul className="space-y-2 text-sm">
             <li><a href="#" className="hover:underline">About Us</a></li>
@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
 
         {/* Support Section */}
-        <div className="w-full sm:w-1/2 lg:w-1/5 flex flex-col gap-2">
+        <div className="flex flex-col">
           <h2 className="text-2xl font-bold">Support</h2>
           <ul className="space-y-2 text-sm">
             <li><a href="#" className="hover:underline">FAQs</a></li>
@@ -48,7 +48,7 @@ export default function Footer() {
         </div>
 
         {/* Contact Section */}
-        <div className="w-full sm:w-1/2 lg:w-1/5 flex flex-col gap-2">
+        <div className=" flex flex-col">
           <h2 className="text-2xl font-bold">Contact</h2>
           <ul className="space-y-2 text-sm">
             <li><a href="#" className="hover:underline">Email Us</a></li>
@@ -57,7 +57,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      
+
       {/* Social Media Icons Section */}
       <div className="flex space-x-4 mt-10"> {/* Added margin-top to create a gap */}
         <a href="#" className="text-black hover:text-gray-600">
