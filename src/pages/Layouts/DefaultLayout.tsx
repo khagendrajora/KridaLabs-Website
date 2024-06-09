@@ -6,7 +6,7 @@ import Header from "../../components/Header/Header";
 export default function DefaultLayout({ children }: { children: ReactNode }) {
   return (
     <>
-      <header className=" ml-[120px] mt-[42px] w-[1200px] h-[33px]">
+      <header className=" ml-[170px] mt-[42px] w-[1200px] h-[33px]">
       <div className="flex justify-between items-center h-full">
         <div className="text-xl font-bold">
           <a href="#" className="hover:text-gray-400">KridaLabs</a>
@@ -25,7 +25,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
       
       
     </header>
-    <section className="h-screen  ml-[68px] mt-[116px]  w-[1372px] h-[608px]  flex justify-between ">
+    <section className="h-screen  ml-[120px] mt-[116px]  w-[1372px] h-[608px]  flex justify-between ">
         <div className="flex flex-col  ml-[52px] mt-[123px] ">
           <h1 className="text-5xl font-bold  mb-8">
             Future of Technology
@@ -37,14 +37,31 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
             Get Started
           </button>
         </div>
-        <div className="w-[754px] h-[512px]">
-          <img
-            src="https://cdn.pixabay.com/photo/2022/10/04/21/25/xr-7499160_1280.jpg"
-            alt="Tech Illustration"
-            className="rounded-lg shadow-lg border-bottom-left-radius"
-            style={{ borderBottomLeftRadius: '40%' }}
-          />
-        </div>
+        <div className="relative w-[754px] h-[512px]">
+      <div 
+        className="absolute top-0 left-0 ml-[-63px]  bg-blue-200 w-[129px] h-[129px] rounded-full z-0"
+        style={{
+          zIndex: 0,
+        }}
+      ></div>
+       <div 
+ className="absolute top-[370px] left-[425px] bg-yellow-200 w-[178px] h-[178px] z-0 rounded-br-full"        style={{
+          borderBottomRightRadius: '50%',
+          zIndex: 0,
+          marginRight: '456px',
+        }}
+      ></div>
+      <img
+        src="https://cdn.pixabay.com/photo/2022/10/04/21/25/xr-7499160_1280.jpg"
+        alt="Tech Illustration"
+        className="rounded-lg shadow-lg border-bottom-left-radius z-10"
+        style={{ 
+          borderBottomLeftRadius: '40%',
+          position: 'relative', 
+          zIndex: 10,
+        }}
+      />
+    </div>
      
     </section>
     
