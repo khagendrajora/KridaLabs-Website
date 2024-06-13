@@ -2,6 +2,10 @@ import { useState } from 'react';
 import { ReactNode } from "react";
 import Footer from "../../components/Footer/Footer";
 import { Services } from "../../components/Services/Services";
+import { Projects } from "../../components/Projects/Projects"
+import { Blogs } from '../../components/Blogs/Blogs';
+import { ClientView } from '../../components/ClientView/ClientView';
+import { ContactUS } from '../../components/Contact/ContactUS';
 
 export default function DefaultLayout({ children }: { children: ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,26 +13,62 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  const Service = () => {
+    const service = document.getElementById('services')
+    if (service) {
+      window.scrollTo({
+        top: service.offsetTop,
+        behavior: 'smooth'
+      })
+    }
+  }
+  const Project = () => {
+    const project = document.getElementById('projects')
+    if (project) {
+      window.scrollTo({
+        top: project.offsetTop,
+        behavior: 'smooth'
+      })
+    }
+  }
+  const Blog = () => {
+    const blog = document.getElementById('blogs')
+    if (blog) {
+      window.scrollTo({
+        top: blog.offsetTop,
+        behavior: 'smooth'
+      })
+    }
+  }
+  const ContactUs = () => {
+    const contactus = document.getElementById('contactUs')
+    if (contactus) {
+      window.scrollTo({
+        top: contactus.offsetTop,
+        behavior: 'smooth'
+      })
+    }
+  }
 
   return (
     <>
       <div className="bg-white">
-        <header className="p-4 sm:ml-[120px] sm:mt-[42px] sm:w-[1200px] sm:h-[33px]">
-          <div className="flex justify-between items-center h-full">
+        <header className="p-4 sm:ml-[10px] sm:mt-[15px] h-[100px] w-full  ">
+          <div className="flex justify-between">
             <div className="text-xl font-bold">
               <a href="#" className="hover:text-gray-400">KridaLabs</a>
             </div>
-            <nav className="hidden sm:block">
+            <nav className="sm:hidden lg:hidden xl:block xl:me-24">
               <ul className="flex space-x-12">
                 <li><a href="#" className="hover:text-gray-400">Home</a></li>
-                <li><a href="#" className="hover:text-gray-400">Services</a></li>
-                <li><a href="#" className="hover:text-gray-400">Project</a></li>
-                <li><a href="#" className="hover:text-gray-400">Blog</a></li>
-                <li><a href="#" className="hover:text-gray-400">Contact</a></li>
+                <li><a href="#" className="hover:text-gray-400" onClick={Service}>Services</a></li>
+                <li><a href="#" className="hover:text-gray-400" onClick={Project}>Project</a></li>
+                <li><a href="#" className="hover:text-gray-400" onClick={Blog}>Blog</a></li>
+                <li><a href="#" className="hover:text-gray-400" onClick={ContactUs}>Contact</a></li>
               </ul>
             </nav>
             <button
-              className="sm:hidden flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-400 hover:border-gray-400"
+              className="xl:hidden flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-400 hover:border-gray-400"
               onClick={toggleMenu}
             >
               <svg
@@ -42,30 +82,30 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
             </button>
           </div>
           {menuOpen && (
-            <nav className="sm:hidden absolute top-16 right-0 bg-white shadow-lg rounded-lg py-2 w-[200px]">
-              <ul className="flex flex-col space-y-2">
+            <nav className=" absolute top-16 right-0 flex justify-center bg-white shadow-lg rounded-lg py-2 w-full">
+              <ul className="flex flex-col space-y-4">
                 <li><a href="#" className="hover:text-gray-400 px-4 py-2">Home</a></li>
-                <li><a href="#" className="hover:text-gray-400 px-4 py-2">Services</a></li>
-                <li><a href="#" className="hover:text-gray-400 px-4 py-2">Project</a></li>
-                <li><a href="#" className="hover:text-gray-400 px-4 py-2">Blog</a></li>
-                <li><a href="#" className="hover:text-gray-400 px-4 py-2">Contact</a></li>
+                <li><a href="#" className="hover:text-gray-400 px-4 py-2" onClick={Service}>Services</a></li>
+                <li><a href="#" className="hover:text-gray-400 px-4 py-2" onClick={Project}>Project</a></li>
+                <li><a href="#" className="hover:text-gray-400 px-4 py-2" onClick={Blog}>Blog</a></li>
+                <li><a href="#" className="hover:text-gray-400 px-4 py-2" onClick={ContactUs}>Contact</a></li>
               </ul>
             </nav>
           )}
         </header>
-        <section className="ml-4  sm:ml-[68px] sm:mt-[116px] w-full sm:w-[1372px] h-auto sm:h-[608px] flex flex-col sm:flex-row justify-between">
-          <div className="flex flex-col ml-4 sm:ml-[52px] mt-8 sm:mt-[123px]">
-            <h1 className="text-3xl sm:text-5xl font-bold mb-4 sm:mb-8">
+        <section className="sm:hidden  lg:hidden xl:flex xl:flex-row xl:justify-between ">
+          <div className="flex flex-col ml-10 space-y-4 justify-center ">
+            <h1 className="text-4xl  font-bold mb-4 ">
               Future of Technology
             </h1>
-            <p className="text-lg sm:text-xl mb-4 sm:mb-6 max-w-lg">
+            <p className=" sm:text-xl mb-4 max-w-lg">
               Empowering businesses with cutting-edge solutions and next-gen technology  Empowering businesses with cutting-edge solutions and next-gen technology.
             </p>
             <button className="bg-blue-600 text-white w-32 sm:w-40 py-2 sm:py-3 rounded-3xl hover:bg-blue-500 transition duration-300">
               Get Started
             </button>
           </div>
-          <div className="relative w-full sm:w-[754px] h-[300px] sm:h-[512px] mt-8 sm:mt-0">
+          <div className="relative w-[600px]  h-[512px] mt-8 sm:mt-0">
             <div
               className="absolute top-0 left-0 ml-[-63px] bg-blue-500 w-[129px] h-[129px] rounded-full z-0"
               style={{
@@ -87,14 +127,26 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
                 borderBottomLeftRadius: '40%',
                 position: 'relative',
                 zIndex: 10,
-                width: '100%',
+                // width: '100%',
                 height: '100%',
                 objectFit: 'cover',
               }}
             />
           </div>
         </section>
+        <section className='p-6 space-y-5 lg:hidden xl:hidden'>
+          <div className='text-black font-extrabold flex justify-center text-wrap text-3xl'>A Digital Product Agency</div>
+          <div className='text-gray-400 text-wrap'>Leading digital agency with solid design and development expertise. We build readymade website, mobile application and elaborate online business services</div>
+          <button className="bg-blue-600 text-white w-28 p-2  rounded-3xl hover:bg-blue-500 transition duration-300">
+            Contact Now
+          </button>
+          <img src='/public/image 8.png' className='w-full' />
+        </section>
         <Services />
+        <Projects />
+        <ClientView />
+        <Blogs />
+        <ContactUS />
         <main>
           {children}
         </main>

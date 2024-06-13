@@ -9,14 +9,14 @@ export default {
         serviceRight: '#eff6ff',
         body: '#F4F4F4'
       },
-      // screens: {
-      //   sm: '320px',
-      //   md: '580px',
-      //   lg: '768px',
-      //   xl: '1024px',
-      //   xxl: '1124px',
-      //   xxxl: '1400px'
-      // }
+      screens: {
+        sm: '320px',
+
+        lg: '768px',
+        xl: '1280px',
+        xxl: '1124px',
+        xxxl: '1400px'
+      }
     },
   },
   plugins: [],

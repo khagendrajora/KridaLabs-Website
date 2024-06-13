@@ -2,64 +2,64 @@ import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-black py-8 px-[120px]"> {/* Set padding-left and padding-right to 120px */}
+    <footer className="bg-white text-black py-1 px-1"> {/* Set padding-left and padding-right to 120px */}
       {/* Separator Line */}
-      <hr className="border-t-2 border-gray-200 my-8" /> {/* Horizontal line */}
+      <hr className="border-t-2 border-gray-200" /> {/* Horizontal line */}
 
-      
-        {/* Left Section */}
-        
 
-        {/* Center Section */}
-        <div className="flex flex-wrap justify-between w-full lg:w-5/5 gap-8">
-        <div className="w-full sm:w-1/2 lg:w-auto flex flex-col gap-2 text-left">
-            <h2 className="text-2xl font-bold">KridaLabs</h2>
-            <p className="text-sm">abc</p>
-          </div>
-          {/* What We Do Section */}
-          <div className="w-full sm:w-1/2 lg:w-auto flex flex-col gap-2 text-left">
-            <h2 className="text-2xl font-bold">What We Do</h2>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:underline">Web Design</a></li>
-              <li><a href="#" className="hover:underline">App Design</a></li>
-              <li><a href="#" className="hover:underline">Social Media Manage</a></li>
-            </ul>
-          </div>
+      {/* Left Section */}
 
-          {/* Company Section */}
-          <div className="w-full sm:w-1/2 lg:w-auto flex flex-col gap-2 text-left">
-            <h2 className="text-2xl font-bold">Company</h2>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:underline">About Us</a></li>
-              <li><a href="#" className="hover:underline">Careers</a></li>
-              <li><a href="#" className="hover:underline">Become Investor</a></li>
-            </ul>
-          </div>
 
-          {/* Support Section */}
-          <div className="w-full sm:w-1/2 lg:w-auto flex flex-col gap-2 text-left">
-            <h2 className="text-2xl font-bold">Support</h2>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:underline">FAQs</a></li>
-              <li><a href="#" className="hover:underline">Policy</a></li>
-              <li><a href="#" className="hover:underline">Business</a></li>
-            </ul>
-          </div>
-          <div className="w-full sm:w-1/2 lg:w-auto flex flex-col gap-2 text-left">
-            <h2 className="text-2xl font-bold">Contact</h2>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:underline">Email Us</a></li>
-              <li><a href="#" className="hover:underline">Whatsapp</a></li>
-              <li><a href="#" className="hover:underline">Support Chat</a></li>
-            </ul>
-          </div>
+      {/* Center Section */}
+      <div className="flex flex-row flex-wrap justify-between items-center mx-7 space-y-3 space-x-3 ">
+        <div className=" lg:w-1/3 flex flex-col space-y-2 mt-3 ">
+          <h2 className="text-2xl font-bold">KridaLabs</h2>
+          <p className="text-[10px] text-justify">Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</p>
+        </div>
+        {/* What We Do Section */}
+        <div className="lg:w-auto flex flex-col   ">
+          <h2 className="text-1xl font-bold">What We Do</h2>
+          <ul className="text-[10px] space-y-1">
+            <li><a href="#" className="hover:underline ">Web Design</a></li>
+            <li><a href="#" className="hover:underline">App Design</a></li>
+            <li><a href="#" className="hover:underline ">Social Media Manage</a></li>
+          </ul>
         </div>
 
-        
-      
+        {/* Company Section */}
+        <div className="  lg:w-auto flex flex-col ">
+          <h2 className="text-1xl font-bold">Company</h2>
+          <ul className="space-y-1 text-[10px]">
+            <li><a href="#" className="hover:underline">About Us</a></li>
+            <li><a href="#" className="hover:underline">Careers</a></li>
+            <li><a href="#" className="hover:underline">Become Investor</a></li>
+          </ul>
+        </div>
+
+        {/* Support Section */}
+        <div className=" flex flex-col">
+          <h2 className="text-1xl font-bold">Support</h2>
+          <ul className="space-y-1 text-[10px]">
+            <li><a href="#" className="hover:underline">FAQs</a></li>
+            <li><a href="#" className="hover:underline">Policy</a></li>
+            <li><a href="#" className="hover:underline">Business</a></li>
+          </ul>
+        </div>
+        <div className="flex flex-col">
+          <h2 className="text-1xl font-bold">Contact</h2>
+          <ul className="space-y-1 text-[10px]">
+            <li><a href="#" className="hover:underline">Email Us</a></li>
+            <li><a href="#" className="hover:underline">Whatsapp</a></li>
+            <li><a href="#" className="hover:underline">Support Chat</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
 
       {/* Social Media Icons Section */}
-      <div className="flex space-x-4 mt-10"> {/* Added margin-top to create a gap */}
+      <div className="flex justify-center space-x-4 mt-10"> {/* Added margin-top to create a gap */}
         <a href="#" className="text-black hover:text-gray-600">
           <FaFacebookF size={24} /> {/* Increased size */}
         </a>
@@ -71,10 +71,10 @@ export default function Footer() {
         </a>
       </div>
       {/* Separator Line */}
-      <hr className="border-t-2 border-gray-200 my-8" /> {/* Horizontal line */}
+      <hr className="border-t-2 border-gray-200 my-2" /> {/* Horizontal line */}
 
       {/* Copyright Section */}
-      <div className="text-center text-sm mt-4 text-gray-400">
+      <div className="text-center text-sm  text-gray-400">
         Copyright © 2024 KridaLabs. All rights reserved.
       </div>
     </footer>
