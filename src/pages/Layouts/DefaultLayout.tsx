@@ -53,7 +53,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <div className="bg-white ">
-        <header className="p-4 sm:ml-[10px] sm:mt-[15px] h-[100px] w-full  ">
+        <header className="p-4 sm:ml-[10px] sm:mt-[15px] h-[100px]   ">
           <div className="flex justify-between">
             <div className="text-xl font-bold">
               <a href="#" className="hover:text-gray-400">KridaLabs</a>
