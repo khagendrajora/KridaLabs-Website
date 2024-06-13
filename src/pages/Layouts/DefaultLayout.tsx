@@ -94,7 +94,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
           )}
         </header>
         <section className="sm:hidden  lg:hidden xl:flex xl:flex-row xl:justify-between xl:mx-[120px] ">
-          <div className="flex flex-col ml-10 space-y-4 justify-center ">
+          <div className="flex flex-col  space-y-4 justify-center ">
             <h1 className="text-4xl  font-bold mb-4 ">
               Future of Technology
             </h1>

@@ -15,12 +15,12 @@ export const Services = () => {
     return (
         <>
             <div id='services'></div>
-            <div className='w-full lg:hidden xl:flex  flex-col py-12 p-5 space-y-2 xl:flex-row '>
+            <div className='w-full lg:hidden xl:flex  flex-col py-12 p-5 space-y-2 xl:flex-row  '>
                 <div className='left  sm:hidden lg:hidden xl:p-7 xl:w-1/4 xl:z-20 xl:flex xl:flex-row xl:items-center   '>
                     <div className=' bg-servicesLeft p-5 w-40 h-36  space-y-10 rounded-tl-[90px]'>
-                        <h1 className='text-4xl text-wrap w-80 p-3 z-10'>How can we help your Business?</h1>
-                        <p className='w-[450px]'>We build ready made websites, mobile applications, and elaborate online business services</p>
-                        <div className='grid grid-rows-8 grid-flow-col gap-3 z-0'  >
+                        <h1 className='text-4xl text-wrap w-80 ml-[52px] z-10'>How can we help your Business?</h1>
+                        <p className='w-[450px] ml-[52px] '>We build ready made websites, mobile applications, and elaborate online business services</p>
+                        <div className='grid grid-rows-8 grid-flow-col gap-3 ml-[52px] z-0'  >
                             {renderGridElements()}
                         </div>
                     </div>
