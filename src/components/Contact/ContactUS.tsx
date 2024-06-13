@@ -11,11 +11,11 @@ export const ContactUS = () => {
                 <div className="px-10">
                     <h1 className=' text-2xl font-bold'>Contact Us</h1>
                     <p className='text-gray-400 text-justify '>Get in touch us to kickstart your ideas.</p>
-                    <form className='space-y-3'>
-                        <input type='text' placeholder='Your Email' className='p-1 text-black bg-blue-200 rounded-lg w-full' />
-                        <input type='text' placeholder='Name' className='p-1 text-black bg-blue-200 rounded-lg w-full' />
-                        <textarea typeof='text' placeholder='message' className='p-1 text-black bg-blue-200 rounded-lg w-full' />
-                        <button className="bg-blue-800 text-white w-28 p-2  rounded-3xl hover:bg-blue-500 transition duration-300" type='submit'>
+                    <form className='space-y-4'>
+                        <input type='text' placeholder='Your Email' className='p-3 pl-7 text-black bg-blue-100 rounded-md w-full' />
+                        <input type='text' placeholder='Name' className='p-3 pl-7 text-black bg-blue-100 rounded-lg w-full' />
+                        <textarea typeof='text' placeholder='message' className='p-3 pl-7 text-black bg-blue-100 rounded-lg w-full' />
+                        <button className="bg-blue-700 text-white w-28 p-2  rounded-3xl hover:bg-blue-500 transition duration-300" type='submit'>
                             Contact Now
                         </button>
                     </form>
