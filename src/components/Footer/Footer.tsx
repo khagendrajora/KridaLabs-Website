@@ -2,7 +2,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-black py-1 px-1"> {/* Set padding-left and padding-right to 120px */}
+    <footer className="bg-white text-black py-1 px-1 xl:mx-[120px]"> {/* Set padding-left and padding-right to 120px */}
       {/* Separator Line */}
       <hr className="border-t-2 border-gray-200" /> {/* Horizontal line */}
 
@@ -11,13 +11,13 @@ export default function Footer() {
 
 
       {/* Center Section */}
-      <div className="flex flex-row flex-wrap justify-between items-center mx-7 space-y-3 space-x-3 ">
+      <div className="flex flex-row flex-wrap justify-between  mx-7 space-y-3  ">
         <div className=" lg:w-1/3 flex flex-col space-y-2 mt-3 ">
           <h2 className="text-2xl font-bold">KridaLabs</h2>
           <p className="text-[10px] text-justify">Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</p>
         </div>
         {/* What We Do Section */}
-        <div className="lg:w-auto flex flex-col   ">
+        <div className="lg:w-auto flex flex-col justify-start me-2 ">
           <h2 className="text-1xl font-bold">What We Do</h2>
           <ul className="text-[10px] space-y-1">
             <li><a href="#" className="hover:underline ">Web Design</a></li>
@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
 
         {/* Company Section */}
-        <div className="  lg:w-auto flex flex-col ">
+        <div className="  lg:w-auto flex flex-col me-2 ">
           <h2 className="text-1xl font-bold">Company</h2>
           <ul className="space-y-1 text-[10px]">
             <li><a href="#" className="hover:underline">About Us</a></li>
@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
 
         {/* Support Section */}
-        <div className=" flex flex-col">
+        <div className=" flex flex-col me-2">
           <h2 className="text-1xl font-bold">Support</h2>
           <ul className="space-y-1 text-[10px]">
             <li><a href="#" className="hover:underline">FAQs</a></li>
@@ -45,7 +45,7 @@ export default function Footer() {
             <li><a href="#" className="hover:underline">Business</a></li>
           </ul>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col me-2">
           <h2 className="text-1xl font-bold">Contact</h2>
           <ul className="space-y-1 text-[10px]">
             <li><a href="#" className="hover:underline">Email Us</a></li>

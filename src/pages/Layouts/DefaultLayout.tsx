@@ -52,7 +52,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
 
   return (
     <>
-      <div className="bg-white">
+      <div className="bg-white ">
         <header className="p-4 sm:ml-[10px] sm:mt-[15px] h-[100px] w-full  ">
           <div className="flex justify-between">
             <div className="text-xl font-bold">
@@ -93,7 +93,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
             </nav>
           )}
         </header>
-        <section className="sm:hidden  lg:hidden xl:flex xl:flex-row xl:justify-between ">
+        <section className="sm:hidden  lg:hidden xl:flex xl:flex-row xl:justify-between xl:mx-[120px] ">
           <div className="flex flex-col ml-10 space-y-4 justify-center ">
             <h1 className="text-4xl  font-bold mb-4 ">
               Future of Technology
