@@ -2,7 +2,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-black py-1 px-1 xl:mx-[120px]"> {/* Set padding-left and padding-right to 120px */}
+    <footer className="bg-white text-black py-1 px-1 xl:mx-[120px] mt-4"> {/* Set padding-left and padding-right to 120px */}
       {/* Separator Line */}
       <hr className="border-t-2 border-gray-200" /> {/* Horizontal line */}
 
