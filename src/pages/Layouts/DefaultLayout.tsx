@@ -140,7 +140,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
           <button className="bg-blue-600 text-white w-28 p-2  rounded-3xl hover:bg-blue-500 transition duration-300">
             Contact Now
           </button>
-          <img src='/public/image 8.png' className='w-full' />
+          <img src='/image 8.png' className='w-full' />
         </section>
         <Services />
         <Projects />
