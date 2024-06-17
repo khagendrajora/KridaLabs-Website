@@ -1,3 +1,5 @@
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 
 export const Blogs = () => {
@@ -16,7 +18,10 @@ export const Blogs = () => {
                         <img src='/image 8.png' className='xl:w-96 lg:w-60'></img>
                         <p className='text-1xl text-gray-400'>Design</p>
                         <h1 className='font-bold lg:w-60 xl:w-96 '>How great content helps drive success?</h1>
-                        <button className='text-blue-500' onClick={handleClick}>Read more...</button>
+                        <div className='space-x-2 flex-row'>
+                            <button className='text-blue-500' onClick={handleClick}>Read more</button>
+                            <FontAwesomeIcon icon={faArrowRight} className='text-blue-400 cursor-pointer' onClick={handleClick} />
+                        </div>
                         {blog &&
                             <p className='text-gray-400 text-justify px-4 lg:w-48'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsam debitis explicabo, pariatur accusamus sint consequatur iure esse deleniti, maiores eveniet nam dicta atque ratione, nihil fugiat numquam impedit natus!</p>
 
@@ -26,7 +31,10 @@ export const Blogs = () => {
                         <img src='/image 8.png' className='xl:w-96'></img>
                         <p className='text-1xl text-gray-400'>Design</p>
                         <h1 className='font-bold xl:w-96 lg:w-60'>How great content helps drive success?</h1>
-                        <button className='text-blue-500' onClick={handleClick}>Read more...</button>
+                        <div className='space-x-2 flex-row'>
+                            <button className='text-blue-500' onClick={handleClick}>Read more</button>
+                            <FontAwesomeIcon icon={faArrowRight} className='text-blue-400 cursor-pointer' onClick={handleClick} />
+                        </div>
                         {blog &&
                             <p className='text-gray-400 text-justify px-4 lg:w-48'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsam debitis explicabo, pariatur accusamus sint consequatur iure esse deleniti, maiores eveniet nam dicta atque ratione, nihil fugiat numquam impedit natus!</p>
 
@@ -36,7 +44,10 @@ export const Blogs = () => {
                         <img src='/image 8.png' className='xl:w-96'></img>
                         <p className='text-1xl text-gray-400'>Design</p>
                         <h1 className='font-bold xl:w-96 lg:w-60'>How great content helps drive success?</h1>
-                        <button className='text-blue-500' onClick={handleClick}>Read more...</button>
+                        <div className='space-x-2 flex-row'>
+                            <button className='text-blue-500' onClick={handleClick}>Read more</button>
+                            <FontAwesomeIcon icon={faArrowRight} className='text-blue-400 cursor-pointer' onClick={handleClick} />
+                        </div>
                         {blog &&
                             <p className='text-gray-400 text-justify px-4 lg:w-48'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsam debitis explicabo, pariatur accusamus sint consequatur iure esse deleniti, maiores eveniet nam dicta atque ratione, nihil fugiat numquam impedit natus!</p>
 

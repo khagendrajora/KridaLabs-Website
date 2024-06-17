@@ -16,7 +16,6 @@ export const ClientView = () => {
                     <p className='text-gray-400 lg:hidden  '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus doloribus facere atque voluptate, quam perferendis fugiat nemo ea molestiae quia voluptatibus ipsum consequatur rem delectus alias molestias quo officiis necessitatibus!</p>
 
                 </div>
-
             </div>
 
         </>

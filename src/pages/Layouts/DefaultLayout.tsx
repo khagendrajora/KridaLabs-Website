@@ -6,6 +6,8 @@ import { Projects } from "../../components/Projects/Projects"
 import { Blogs } from '../../components/Blogs/Blogs';
 import { ClientView } from '../../components/ClientView/ClientView';
 import { ContactUS } from '../../components/Contact/ContactUS';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function DefaultLayout({ children }: { children: ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -92,6 +94,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
           </div>
           {menuOpen && (
             <nav className=" absolute top-28 right-0 flex justify-end bg-white shadow-lg rounded-lg py-2 w-full">
+              <FontAwesomeIcon icon={faXmark} />
               <ul className="flex flex-col space-y-4  font-primary me-2">
                 <li><a href="#" className="hover:text-gray-400 px-4 py-2">Home</a></li>
                 <li><a href="#" className="hover:text-gray-400 px-4 py-2" onClick={Service}>Services</a></li>
@@ -105,12 +108,13 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
         <section className="sm:hidden  lg:hidden xl:flex xl:flex-row xl:justify-between xl:mx-[120px] ">
           <div className="flex flex-col  space-y-4 justify-center ">
             <h1 className="text-4xl  font-bold mb-4 ">
-              Future of Technology
+              Pioneering  <br />Tomorrow's Technology
             </h1>
             <p className=" sm:text-xl mb-4 max-w-lg">
-              Empowering businesses with cutting-edge solutions and next-gen technology  Empowering businesses with cutting-edge solutions and next-gen technology.
-            </p>
-            <button className="bg-blue-600 text-white w-32 sm:w-40 relative py-2 sm:py-3 rounded-3xl hover:bg-blue-500 transition duration-300 z-10">
+              Welcome to KridaLabs
+              <br />
+              At KridaLabs, we're obsessed with unlocking the potential of technology. We're a team of passionate innovators shaping the future by crafting cutting-edge solutions that propel businesses forward.  We partner with businesses to navigate the ever-changing digital landscape, transforming their ambitions into reality.</p>
+            <button className="bg-blue-600 text-white w-32 sm:w-40 py-2 sm:py-3 rounded-3xl hover:bg-blue-500 transition duration-300 z-10">
               Get Started
             </button>
             <div className='grid grid-rows-8 grid-flow-col gap-3 -ml-[52px] absolute top-[430px]  z-0 '  >

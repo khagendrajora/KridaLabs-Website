@@ -11,14 +11,18 @@ export default function Footer() {
 
 
       {/* Center Section */}
-      <div className="flex flex-row flex-wrap justify-between  mx-7 space-y-3  ">
+      <div className="flex flex-row flex-wrap justify-between  space-y-3  ">
         <div className=" lg:w-1/3 flex flex-col space-y-2 mt-3 ">
-          <h2 className="text-2xl font-bold">KridaLabs</h2>
+          <div className='flex items-center'>
+            <img src='/logo.svg' className='pe-2 w-[80px] ' />
+            <h2 className="text-2xl font-bold">KridaLabs</h2>
+          </div>
+
           <p className="text-[10px] text-justify">Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</p>
         </div>
         {/* What We Do Section */}
-        <div className="lg:w-auto flex flex-col justify-start me-2 ">
-          <h2 className="text-1xl font-bold">What We Do</h2>
+        <div className="lg:w-auto flex flex-col justify-center space-y-2 items-start me-2 ">
+          <h2 className="text-2xl font-bold">What We Do</h2>
           <ul className="text-[10px] space-y-1">
             <li><a href="#" className="hover:underline ">Web Design</a></li>
             <li><a href="#" className="hover:underline">App Design</a></li>
@@ -27,8 +31,8 @@ export default function Footer() {
         </div>
 
         {/* Company Section */}
-        <div className="  lg:w-auto flex flex-col me-2 ">
-          <h2 className="text-1xl font-bold">Company</h2>
+        <div className="  lg:w-auto flex flex-col justify-center space-y-2 items-start me-2 ">
+          <h2 className="text-2xl font-bold">Company</h2>
           <ul className="space-y-1 text-[10px]">
             <li><a href="#" className="hover:underline">About Us</a></li>
             <li><a href="#" className="hover:underline">Careers</a></li>
@@ -37,16 +41,16 @@ export default function Footer() {
         </div>
 
         {/* Support Section */}
-        <div className=" flex flex-col me-2">
-          <h2 className="text-1xl font-bold">Support</h2>
+        <div className=" flex flex-col justify-center space-y-2 items-start me-2">
+          <h2 className="text-2xl font-bold">Support</h2>
           <ul className="space-y-1 text-[10px]">
             <li><a href="#" className="hover:underline">FAQs</a></li>
             <li><a href="#" className="hover:underline">Policy</a></li>
             <li><a href="#" className="hover:underline">Business</a></li>
           </ul>
         </div>
-        <div className="flex flex-col me-2">
-          <h2 className="text-1xl font-bold">Contact</h2>
+        <div className="flex flex-col justify-center space-y-2 items-start me-2 xl:me-0">
+          <h2 className="text-2xl font-bold">Contact</h2>
           <ul className="space-y-1 text-[10px]">
             <li><a href="#" className="hover:underline">Email Us</a></li>
             <li><a href="#" className="hover:underline">Whatsapp</a></li>
