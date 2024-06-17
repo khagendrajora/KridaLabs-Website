@@ -16,6 +16,9 @@ export default {
         xl: '1280px',
         xxl: '1124px',
         xxxl: '1400px'
+      },
+      fontFamily: {
+        primary: 'Proxima Nova Rg'
       }
     },
   },

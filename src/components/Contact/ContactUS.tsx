@@ -6,7 +6,7 @@ export const ContactUS = () => {
             <div id="contactUs"></div>
             <div className='flex flex-col pt-10 px-5 space-y-1 lg:flex-row lg:justify-between xl:justify-evenly lg:items-center'>
                 <div className="p-6 sm:hidden lg:flex lg:w-1/2 lg:justify-center ">
-                    <img src="/Group 143.png" className="w-[541px]"></img>
+                    <img src="/Group 143.svg" className="w-[541px]"></img>
                 </div>
                 <div className="px-10 lg:w-1/2 xl:w-1/3 lg:flex-col  lg:space-y-4 ">
                     <h1 className=' text-4xl font-bold'>Contact Us</h1>
