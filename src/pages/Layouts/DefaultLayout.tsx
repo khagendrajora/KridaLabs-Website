@@ -96,11 +96,12 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
         <section className="sm:hidden  lg:hidden xl:flex xl:flex-row xl:justify-between xl:mx-[120px] ">
           <div className="flex flex-col  space-y-4 justify-center ">
             <h1 className="text-4xl  font-bold mb-4 ">
-              Future of Technology
+            Pioneering  <br />Tomorrow's Technology
             </h1>
             <p className=" sm:text-xl mb-4 max-w-lg">
-              Empowering businesses with cutting-edge solutions and next-gen technology  Empowering businesses with cutting-edge solutions and next-gen technology.
-            </p>
+            Welcome to KridaLabs
+<br />
+At KridaLabs, we're obsessed with unlocking the potential of technology. We're a team of passionate innovators shaping the future by crafting cutting-edge solutions that propel businesses forward.  We partner with businesses to navigate the ever-changing digital landscape, transforming their ambitions into reality.</p>
             <button className="bg-blue-600 text-white w-32 sm:w-40 py-2 sm:py-3 rounded-3xl hover:bg-blue-500 transition duration-300">
               Get Started
             </button>

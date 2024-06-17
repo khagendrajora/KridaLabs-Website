@@ -19,7 +19,16 @@ export const Services = () => {
                 <div className='left  sm:hidden lg:hidden xl:p-7 xl:w-1/4 xl:z-20 xl:flex xl:flex-row xl:items-center   '>
                     <div className=' bg-servicesLeft p-5 w-40 h-36  space-y-10 rounded-tl-[90px]'>
                         <h1 className='text-4xl text-wrap w-80 ml-[52px] z-10'>How can we help your Business?</h1>
-                        <p className='w-[450px] ml-[52px] '>We build ready made websites, mobile applications, and elaborate online business services</p>
+                        <p className='w-[450px] ml-[52px] '>
+                        <ul class="list-disc list-inside">
+          <li><strong>Conceptualization:</strong> Refining your business idea to align with market needs.</li>
+          <li><strong>Market Research:</strong> Analyzing market trends and competition to identify opportunities.</li>
+          <li><strong>Technical Feasibility:</strong> Assessing the technological requirements and resources needed for implementation.</li>
+          <li><strong>Budgeting and Timelines:</strong> Estimating costs and timelines for project completion.</li>
+        </ul>
+
+                            
+                        </p>
                         <div className='grid grid-rows-8 grid-flow-col gap-3 ml-[52px] z-0'  >
                             {renderGridElements()}
                         </div>
@@ -30,12 +39,12 @@ export const Services = () => {
                 <div className='lg:hidden flex flex-wrap space-x-4 justify-center space-y-4'>
                     <div className='card bg-white  rounded-3xl z-10 w-[250px] flex flex-col justify-start space-y-3 items-center p-10 shadow-md'>
                         <div className='bg-white p-4 rounded-2xl mb-5 '><FontAwesomeIcon icon={faCube} size='4x' /></div>
-                        <div className='text-3xl w-[210px] font-semibold'>Business Idea Planning</div>
-                        <p className='m-auto w-[200px] text-gray-600'>We Present you a proposal and discuss nifity-gritty like</p>
+                        <div className='text-3xl w-[210px] font-semibold'>Custom Software Development</div>
+                        <p className='m-auto w-[200px] text-gray-600'>Agile and scalable solutions tailored to your startup’s unique needs.</p>
                     </div>
                     <div className='card bg-white  rounded-3xl z-10 w-[250px] flex flex-col justify-start space-y-3 items-center p-10 shadow-md'>
                         <div className='bg-yellow-300 p-4 rounded-2xl mb-5 '><FontAwesomeIcon icon={faCube} size='4x' /></div>
-                        <div className='text-3xl w-[210px] font-semibold'>Business Idea Planning</div>
+                        <div className='text-3xl w-[210px] font-semibold'>Business </div>
                         <p className='m-auto w-[200px] text-gray-600'>We Present you a proposal and discuss nifity-gritty like</p>
                     </div>
                     <div className='card bg-white  rounded-3xl z-10 w-[250px] flex flex-col justify-start space-y-3 items-center  p-10 shadow-md'>
@@ -57,25 +66,25 @@ export const Services = () => {
                             <div className='flex flex-col space-y-3 -mt-10'>
                                 <div className='card bg-white  rounded-3xl z-10 w-[250px] flex flex-col justify-start space-y-3 items-center p-10 shadow-2xl'>
                                     <div className='bg-white p-4 rounded-2xl mb-5 '><FontAwesomeIcon icon={faCube} size='4x' /></div>
-                                    <div className='text-3xl w-[210px] font-semibold'>Business Idea Planning</div>
-                                    <p className='m-auto w-[200px] text-gray-600'>We Present you a proposal and discuss nifity-gritty like</p>
+                                    <div className='text-3xl w-[210px] font-semibold'>Software Development</div>
+                                    <p className='m-auto w-[200px] text-gray-600'>Agile and scalable solutions tailored to your startup’s unique needs.</p>
                                 </div>
                                 <div className='card bg-white  rounded-3xl z-10 w-[250px] flex flex-col justify-start space-y-3 items-center p-10 shadow-2xl'>
                                     <div className='bg-yellow-300 p-4 rounded-2xl mb-5 '><FontAwesomeIcon icon={faCube} size='4x' /></div>
-                                    <div className='text-3xl w-[210px] font-semibold'>Business Idea Planning</div>
-                                    <p className='m-auto w-[200px] text-gray-600'>We Present you a proposal and discuss nifity-gritty like</p>
+                                    <div className='text-3xl w-[210px] font-semibold'>Web Development</div>
+                                    <p className='m-auto w-[200px] text-gray-600'>We provide you web services and attractive design.</p>
                                 </div>
                             </div>
                             <div className='flex flex-col space-y-3 -mt-24'>
                                 <div className='card bg-white  rounded-3xl z-10 w-[250px] flex flex-col justify-start space-y-3 items-center  p-10 shadow-2xl'>
                                     <div className='bg-pink-400 p-4 rounded-2xl mb-5'><FontAwesomeIcon icon={faCube} size='4x' /></div>
-                                    <div className='text-3xl w-[210px] font-semibold'>Business Idea Planning</div>
-                                    <p className='m-auto w-[200px] text-gray-600'>We Present you a and discuss nifity-gritty like</p>
+                                    <div className='text-3xl w-[210px] font-semibold'>App Development</div>
+                                    <p className='m-auto w-[200px] text-gray-600'>We can provide mobile application with seamless interface and services.</p>
                                 </div>
                                 <div className='card bg-white  rounded-3xl z-10 w-[250px] flex flex-col justify-center space-y-3 items-center  p-10 shadow-2xl'>
                                     <div className='bg-green-300 p-4 rounded-2xl mb-5'><FontAwesomeIcon icon={faCube} size='4x' /></div>
-                                    <div className='text-3xl w-[210px] font-semibold'>Business Idea Planning</div>
-                                    <p className='m-auto w-[200px] text-gray-600'>We Present you a proposal and discuss nifity-gritty like</p>
+                                    <div className='text-3xl w-[210px] font-semibold'>Digital Marketing</div>
+                                    <p className='m-auto w-[200px] text-gray-600'>We provide service of Digital Marketing to keep your business relevent in field.</p>
                                 </div>
                             </div>
                         </div>
