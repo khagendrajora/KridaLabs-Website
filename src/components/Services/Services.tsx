@@ -20,14 +20,14 @@ export const Services = () => {
                     <div className=' bg-servicesLeft p-5 w-40 h-36  space-y-10 rounded-tl-[90px]'>
                         <h1 className='text-4xl text-wrap w-80 ml-[52px] z-10'>How can we help your Business?</h1>
                         <p className='w-[450px] ml-[52px] '>
-                        <ul className="list-disc list-inside">
-          <li><strong>Conceptualization:</strong> Refining your business idea to align with market needs.</li>
-          <li><strong>Market Research:</strong> Analyzing market trends and competition to identify opportunities.</li>
-          <li><strong>Technical Feasibility:</strong> Assessing the technological requirements and resources needed for implementation.</li>
-          <li><strong>Budgeting and Timelines:</strong> Estimating costs and timelines for project completion.</li>
-        </ul>
+                            <ul className="list-disc list-inside">
+                                <li><strong>Conceptualization:</strong> Refining your business idea to align with market needs.</li>
+                                <li><strong>Market Research:</strong> Analyzing market trends and competition to identify opportunities.</li>
+                                <li><strong>Technical Feasibility:</strong> Assessing the technological requirements and resources needed for implementation.</li>
+                                <li><strong>Budgeting and Timelines:</strong> Estimating costs and timelines for project completion.</li>
+                            </ul>
 
-                            
+
                         </p>
                         <div className='grid grid-rows-8 grid-flow-col gap-3 ml-[52px] z-0'  >
                             {renderGridElements()}

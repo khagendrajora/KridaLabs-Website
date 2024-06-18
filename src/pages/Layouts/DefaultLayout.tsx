@@ -6,6 +6,8 @@ import { Projects } from "../../components/Projects/Projects"
 import { Blogs } from '../../components/Blogs/Blogs';
 import { ClientView } from '../../components/ClientView/ClientView';
 import { ContactUS } from '../../components/Contact/ContactUS';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function DefaultLayout({ children }: { children: ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -50,16 +52,25 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
     }
   }
 
+  const renderGridElements = () => {
+    const elements: React.ReactNode[] = []
+    for (let i = 0; i < 220; i++) {
+      elements.push(<div key={i} className='bg-gray-100 w-2 h-2 rounded'></div>)
+    }
+    return elements
+  }
+
   return (
     <>
       <div className="bg-white ">
         <header className="p-4 sm:ml-[10px] sm:mt-[15px] h-[100px]   ">
           <div className="flex justify-between">
-            <div className="text-xl font-bold">
-              <a href="#" className="hover:text-gray-400">KridaLabs</a>
+            <div className="text-xl font-bold flex items-center">
+              <a href='/' ><img src='/logo.svg' className='pe-2 w-[80px] ' /></a>
+              <a href="/" className="hover:text-gray-400 ">KridaLabs</a>
             </div>
-            <nav className="sm:hidden lg:hidden xl:block xl:me-24">
-              <ul className="flex space-x-12">
+            <nav className="sm:hidden lg:hidden xl:block  xl:me-24">
+              <ul className="flex space-x-12 text-lg">
                 <li><a href="#" className="hover:text-gray-400">Home</a></li>
                 <li><a href="#" className="hover:text-gray-400" onClick={Service}>Services</a></li>
                 <li><a href="#" className="hover:text-gray-400" onClick={Project}>Project</a></li>
@@ -68,11 +79,11 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
               </ul>
             </nav>
             <button
-              className="xl:hidden flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-400 hover:border-gray-400"
+              className="xl:hidden flex  items-center px-3 py-2  text-gray-500  hover:text-gray-400 "
               onClick={toggleMenu}
             >
               <svg
-                className="fill-current h-3 w-3"
+                className="fill-current h-8 "
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -82,8 +93,9 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
             </button>
           </div>
           {menuOpen && (
-            <nav className=" absolute top-16 right-0 flex justify-center bg-white shadow-lg rounded-lg py-2 w-full">
-              <ul className="flex flex-col space-y-4">
+            <nav className=" absolute top-28 right-0 flex justify-end bg-white shadow-lg rounded-lg py-2 w-full">
+              <FontAwesomeIcon icon={faXmark} />
+              <ul className="flex flex-col space-y-4  font-primary me-2">
                 <li><a href="#" className="hover:text-gray-400 px-4 py-2">Home</a></li>
                 <li><a href="#" className="hover:text-gray-400 px-4 py-2" onClick={Service}>Services</a></li>
                 <li><a href="#" className="hover:text-gray-400 px-4 py-2" onClick={Project}>Project</a></li>
@@ -96,15 +108,18 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
         <section className="sm:hidden  lg:hidden xl:flex xl:flex-row xl:justify-between xl:mx-[120px] ">
           <div className="flex flex-col  space-y-4 justify-center ">
             <h1 className="text-4xl  font-bold mb-4 ">
-            Pioneering  <br />Tomorrow's Technology
+              Pioneering  <br />Tomorrow's Technology
             </h1>
             <p className=" sm:text-xl mb-4 max-w-lg">
-            Welcome to KridaLabs
-<br />
-At KridaLabs, we're obsessed with unlocking the potential of technology. We're a team of passionate innovators shaping the future by crafting cutting-edge solutions that propel businesses forward.  We partner with businesses to navigate the ever-changing digital landscape, transforming their ambitions into reality.</p>
-            <button className="bg-blue-600 text-white w-32 sm:w-40 py-2 sm:py-3 rounded-3xl hover:bg-blue-500 transition duration-300">
+              Welcome to KridaLabs
+              <br />
+              At KridaLabs, we're obsessed with unlocking the potential of technology. We're a team of passionate innovators shaping the future by crafting cutting-edge solutions that propel businesses forward.  We partner with businesses to navigate the ever-changing digital landscape, transforming their ambitions into reality.</p>
+            <button className="bg-blue-600 text-white w-32 sm:w-40 py-2 sm:py-3 rounded-3xl hover:bg-blue-500 transition duration-300 z-10">
               Get Started
             </button>
+            <div className='grid grid-rows-8 grid-flow-col gap-3 -ml-[52px] absolute top-[430px]  z-0 '  >
+              {renderGridElements()}
+            </div>
           </div>
           <div className="relative w-[600px]  h-[512px] mt-8 sm:mt-0">
             <div
@@ -128,7 +143,6 @@ At KridaLabs, we're obsessed with unlocking the potential of technology. We're a
                 borderBottomLeftRadius: '40%',
                 position: 'relative',
                 zIndex: 10,
-                // width: '100%',
                 height: '100%',
                 objectFit: 'cover',
               }}
