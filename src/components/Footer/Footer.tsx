@@ -18,7 +18,7 @@ export default function Footer() {
             <h2 className="text-2xl font-bold">KridaLabs</h2>
           </div>
 
-          <p className="text-[10px] text-justify">Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</p>
+          <p className="text-[10px] text-justify">Discover how we’ve helped startups like yours transform their ideas into thriving ventures. From concept to execution, our innovative solutions have driven incredible results.</p>
         </div>
         {/* What We Do Section */}
         <div className="lg:w-auto flex flex-col justify-center space-y-2 items-start me-2 ">
