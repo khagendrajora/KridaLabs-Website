@@ -35,18 +35,18 @@ export const Services = () => {
                     </div>
                     <div className='card bg-white   rounded-3xl z-10  flex flex-col justify-start space-y-3 items-center p-10 shadow-md'>
                         <div className='bg-yellow-300 p-4 rounded-2xl mb-5 '><FontAwesomeIcon icon={faCube} size='4x' /></div>
-                        <div className='text-3xl m-auto w-[210px] font-semibold'>Business </div>
-                        <p className='m-auto w-[200px] text-gray-600'>We Present you a proposal and discuss nifity-gritty like</p>
+                        <div className='text-3xl m-auto w-[210px] font-semibold'>App Development </div>
+                        <p className='m-auto w-[200px] text-gray-600'>We can provide mobile application with seamless interface and services.</p>
                     </div>
                     <div className='card bg-white  rounded-3xl z-10  flex flex-col justify-start space-y-3 items-center  p-10 shadow-md'>
                         <div className='bg-pink-400 p-4 rounded-2xl mb-5'><FontAwesomeIcon icon={faCube} size='4x' /></div>
-                        <div className='text-3xl m-auto w-[210px] font-semibold'>Business Idea Planning</div>
-                        <p className='m-auto w-[200px] text-gray-600'>We Present you a and discuss nifity-gritty like</p>
+                        <div className='text-3xl m-auto w-[210px] font-semibold'>Web Development</div>
+                        <p className='m-auto w-[200px] text-gray-600'>We provide you web services and attractive design.</p>
                     </div>
                     <div className='card bg-white  rounded-3xl z-10  flex flex-col justify-center space-y-3 items-center  p-10 shadow-md'>
                         <div className='bg-green-300 p-4 rounded-2xl mb-5'><FontAwesomeIcon icon={faCube} size='4x' /></div>
-                        <div className='text-3xl m-auto w-[210px] font-semibold'>Business Idea Planning</div>
-                        <p className='m-auto w-[200px]  text-gray-600'>We Present you a proposal and discuss nifity-gritty like</p>
+                        <div className='text-3xl m-auto w-[210px] font-semibold'>Digital Marketing</div>
+                        <p className='m-auto w-[200px]  text-gray-600'>We provide service of Digital Marketing to keep your business relevent in field.</p>
                     </div>
                 </div>
 
