@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="flex flex-row flex-wrap justify-between  mx-7 space-y-3  ">
         <div className=" lg:w-1/3 flex flex-col space-y-2 mt-3 ">
           <h2 className="text-2xl font-bold">KridaLabs</h2>
-          <p className="text-[10px] text-justify">Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</p>
+          <p className="text-[10px] text-justify">Discover how we’ve helped business like yours transform their ideas into thriving ventures. From concept to execution, our innovative solutions have driven incredible results.</p>
         </div>
         {/* What We Do Section */}
         <div className="lg:w-auto flex flex-col justify-start me-2 ">
