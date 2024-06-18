@@ -17,7 +17,7 @@ export const Blogs = () => {
                     <div>
                         <img src='/image1.png' className='xl:w-96 lg:w-60'></img>
                         <p className='text-1xl text-gray-400'>Design</p>
-                        <h1 className='font-bold lg:w-60 xl:w-96 '>How great content helps drive success?</h1>
+                        <h1 className='font-bold lg:w-60 xl:w-96 '>Mastering Material-UI: A Comprehensive UI framework for Developers</h1>
                         <div className='space-x-2 flex-row'>
                             <button className='text-blue-500' onClick={handleClick}>Read more</button>
                             <FontAwesomeIcon icon={faArrowRight} className='text-blue-400 cursor-pointer' onClick={handleClick} />
@@ -28,9 +28,9 @@ export const Blogs = () => {
                         }
                     </div>
                     <div>
-                        <img src='/image 8.png' className='xl:w-96'></img>
-                        <p className='text-1xl text-gray-400'>Design</p>
-                        <h1 className='font-bold xl:w-96 lg:w-60'>How great content helps drive success?</h1>
+                        <img src='/image2.png' className='xl:w-96'></img>
+                        <p className='text-1xl text-gray-400'>Knowledge</p>
+                        <h1 className='font-bold xl:w-96 lg:w-60'>The Impact of Technology: Transforming Human Life</h1>
                         <div className='space-x-2 flex-row'>
                             <button className='text-blue-500' onClick={handleClick}>Read more</button>
                             <FontAwesomeIcon icon={faArrowRight} className='text-blue-400 cursor-pointer' onClick={handleClick} />
@@ -41,9 +41,9 @@ export const Blogs = () => {
                         }
                     </div>
                     <div>
-                        <img src='/image 8.png' className='xl:w-96'></img>
-                        <p className='text-1xl text-gray-400'>Design</p>
-                        <h1 className='font-bold xl:w-96 lg:w-60'>How great content helps drive success?</h1>
+                        <img src='/image.png' className='xl:w-96'></img>
+                        <p className='text-1xl text-gray-400'>Knowledge</p>
+                        <h1 className='font-bold xl:w-96 lg:w-60'>Essential Technologies to Know: Empowering Your Digital Journey</h1>
                         <div className='space-x-2 flex-row'>
                             <button className='text-blue-500' onClick={handleClick}>Read more</button>
                             <FontAwesomeIcon icon={faArrowRight} className='text-blue-400 cursor-pointer' onClick={handleClick} />
