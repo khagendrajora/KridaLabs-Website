@@ -26,8 +26,6 @@ export const Services = () => {
                                 <li><strong>Technical Feasibility:</strong> Assessing the technological requirements and resources needed for implementation.</li>
                                 <li><strong>Budgeting and Timelines:</strong> Estimating costs and timelines for project completion.</li>
                             </ul> */}
-
-
                         </p>
                         <div className='grid grid-rows-8 grid-flow-col gap-3 ml-[52px] z-0'  >
                             {renderGridElements()}
@@ -63,7 +61,7 @@ export const Services = () => {
                 <div className='right  lg:hidden z-10 sm:hidden xl:block w-full '>
                     <div className='bg-serviceRight my-28  h-[560px] rounded-tl-[150px]'>
                         <div className='flex flex-row justify-center space-x-16'>
-                            <div className='flex flex-col space-y-3 -mt-10'>
+                            <div className='flex flex-col space-y-3 -mt-10 xxxl:w-auto'>
                                 <div className='card bg-white  rounded-3xl z-10 w-[250px] flex flex-col justify-start space-y-3 items-center p-10 shadow-2xl'>
                                     <div className='bg-white p-4 rounded-2xl mb-5 '><FontAwesomeIcon icon={faCube} size='4x' /></div>
                                     <div className='text-3xl m-auto w-[210px] font-semibold'>Software Development</div>

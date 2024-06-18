@@ -115,7 +115,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
             </nav>
           )}
         </header>
-        <section className="sm:hidden lg:flex lg:px-10 lg:mb-10 lg:flex-row lg:justify-center z-0 xl:flex xl:flex-row xl:justify-between xl:mx-[120px] ">
+        <section className="sm:hidden lg:flex lg:px-10 lg:mb-10 lg:flex-row lg:justify-center z-0 xl:flex xl:flex-row xl:justify-between xl:mx-[120px]  ">
           <div className="flex flex-col  space-y-4 justify-center ">
             <h1 className="text-4xl  font-bold mb-4 ">
               Pioneering  <br />Tomorrow's Technology
