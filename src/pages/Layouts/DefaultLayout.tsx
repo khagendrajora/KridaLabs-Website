@@ -63,7 +63,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <div className="bg-white xl:flex xl:justify-center">
-        <div className='xl:w-[1280px]'>
+        <div className='xl:w-[2000px]'>
         <header className="p-4 sm:ml-[10px] sm:mt-[15px] h-[100px]   ">
           <div className="flex justify-between">
             <div className="text-xl font-bold flex items-center">
