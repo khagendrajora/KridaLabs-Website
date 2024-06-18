@@ -21,7 +21,7 @@ export default function Footer() {
 
 
       {/* Center Section */}
-      <div className="flex flex-row flex-wrap justify-between  space-y-3 px-5 lg:px-5 xl:px-0  ">
+      <div className="flex flex-row flex-wrap lg:justify-between justify-evenly items-start  space-y-3 px-5 lg:px-5 xl:px-0  ">
         <div className=" lg:w-1/3 flex flex-col space-y-2 mt-3 ">
           <div className='flex items-center'>
             <img src='/logo.svg' className='pe-2 w-[80px] ' />
@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
 
         {/* Support Section */}
-        <div className=" flex flex-col justify-center space-y-2 items-start me-2">
+        <div className=" flex flex-col justify-center space-y-2 w-[142px] lg:w-auto items-start me-2">
           <h2 className="text-2xl font-bold">Support</h2>
           <ul className="space-y-1 text-[10px]">
             <li><a href="#" className="hover:underline">FAQs</a></li>
@@ -60,7 +60,7 @@ export default function Footer() {
             <li><a href="#" className="hover:underline">Business</a></li>
           </ul>
         </div>
-        <div className="flex flex-col justify-center space-y-2 items-start me-2 xl:me-0">
+        <div className="flex flex-col justify-center space-y-2 items-start w-[106px] me-2 xl:me-0">
           <h2 className="text-2xl font-bold">Contact</h2>
           <ul className="space-y-1 text-[10px]">
             <li><a href="#" className="hover:underline">Email Us</a></li>
