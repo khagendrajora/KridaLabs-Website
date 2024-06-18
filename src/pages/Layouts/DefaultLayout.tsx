@@ -78,24 +78,33 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
                 <li><a href="#" className="hover:text-gray-400" onClick={ContactUs}>Contact</a></li>
               </ul>
             </nav>
-            <button
-              className="xl:hidden flex  items-center px-3 py-2  text-gray-500  hover:text-gray-400 "
-              onClick={toggleMenu}
-            >
-              <svg
-                className="fill-current h-8 "
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-              </svg>
-            </button>
+            {!menuOpen ? (
+              <>
+
+                <button
+                  className="xl:hidden flex  items-center px-3 py-2  text-black  hover:text-gray-400 "
+                  onClick={toggleMenu}
+                >
+                  <svg
+                    className="fill-current h-8 "
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                  </svg>
+                </button>
+              </>
+            ) : (
+              <FontAwesomeIcon icon={faXmark} onClick={toggleMenu} className=' h-8 me-5 mt-4' />
+            )
+
+            }
           </div>
           {menuOpen && (
-            <nav className=" absolute top-28 right-0 flex justify-end bg-white shadow-lg rounded-lg py-2 w-full">
-              <FontAwesomeIcon icon={faXmark} />
-              <ul className="flex flex-col space-y-4  font-primary me-2">
+            <nav className=" absolute top-28 right-0 z-10 flex justify-end bg-white shadow-lg rounded-lg py-2 w-full">
+
+              <ul className="flex flex-col space-y-4 z-10 font-primary me-2">
                 <li><a href="#" className="hover:text-gray-400 px-4 py-2">Home</a></li>
                 <li><a href="#" className="hover:text-gray-400 px-4 py-2" onClick={Service}>Services</a></li>
                 <li><a href="#" className="hover:text-gray-400 px-4 py-2" onClick={Project}>Project</a></li>
@@ -105,7 +114,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
             </nav>
           )}
         </header>
-        <section className="sm:hidden lg:flex lg:px-10 lg:mb-10 lg:flex-row lg:justify-center  xl:flex xl:flex-row xl:justify-between xl:mx-[120px] ">
+        <section className="sm:hidden lg:flex lg:px-10 lg:mb-10 lg:flex-row lg:justify-center z-0 xl:flex xl:flex-row xl:justify-between xl:mx-[120px] ">
           <div className="flex flex-col  space-y-4 justify-center ">
             <h1 className="text-4xl  font-bold mb-4 ">
               Pioneering  <br />Tomorrow's Technology
@@ -142,11 +151,11 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
             <img
               src="https://cdn.pixabay.com/photo/2022/10/04/21/25/xr-7499160_1280.jpg"
               alt="Tech Illustration"
-              className="rounded-lg shadow-lg border-bottom-left-radius z-10"
+              className="rounded-lg shadow-lg border-bottom-left-radius z-0"
               style={{
                 borderBottomLeftRadius: '40%',
                 position: 'relative',
-                zIndex: 10,
+                zIndex: 0,
                 height: '100%',
                 objectFit: 'cover',
               }}
