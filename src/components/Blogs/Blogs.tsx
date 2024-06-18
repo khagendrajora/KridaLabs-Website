@@ -25,11 +25,9 @@ export const Blogs = () => {
                     (
                         <>
                             <div className='mb-2   lg:relative'>
-                                {/* // <div className='flex flex-col pt-10 px-6 space-y-10 mb-40  lg:items-center lg:space-y-8 lg:pt-20'> */}
-                                {/* <h1 className=' text-2xl font-bold lg:text-4xl'>Read Our blog</h1>
-                                  <p className='text-gray-400'>Read some of our best  curated articles case studies and  other contents from our team</p> */}
+
                                 <div className='flex flex-col relative lg:mb-40  items-center mt-7  lg:flex-row  lg:justify-center lg:space-x-12 xl:px-5 lg:w-60  xl:w-full'>
-                                    {/* {blogf && */}
+
 
                                     <div className='mb-10 '>
                                         <img src='/image1.png' className='xl:w-96 lg:w-60 bg-cover'></img>
@@ -48,8 +46,7 @@ export const Blogs = () => {
 
                                         }
                                     </div>
-                                    {/* } */}
-                                    {/* {blogs && */}
+
 
                                     <div className=' mb-10'>
                                         <img src='/image2.png' className='xl:w-96 lg:w-60 bg-cover'></img>
@@ -69,8 +66,7 @@ export const Blogs = () => {
 
                                         }
                                     </div>
-                                    {/* } */}
-                                    {/* {blogt && */}
+
                                     <div className=' mb-10'>
                                         <img src='/image.png' className='xl:w-96 lg:w-60 bg-cover'></img>
                                         <p className='text-1xl text-gray-400'>Knowledge</p>
@@ -95,12 +91,10 @@ export const Blogs = () => {
                             </div>
                         </>
                     ) : (<>
-                        {/* // <div className='flex flex-col pt-10 px-6 space-y-2  lg:items-center lg:space-y-8 lg:pt-20'> */}
-                        {/* <h1 className=' text-2xl font-bold lg:text-4xl'>Read Our blog</h1>
-                            <p className='text-gray-400'>Read some of our best  curated articles case studies and  other contents from our team</p> */}
+
                         <div className='flex flex-col relative items-center mt-7 lg:flex-row  lg:justify-center  lg:items-center lg:space-x-12 xl:px-5 lg:w-60  xl:w-full'>
                             <div className='mb-10'>
-                                <img src='/image1.png' className='xl:w-96 lg:w-60'></img>
+                                <img src='/image1.png' className='xl:w-96 lg:w-60 bg-cover'></img>
                                 <p className='text-1xl text-gray-400'>Design</p>
                                 <h1 className='font-bold lg:w-60 xl:w-96 '>Material-UI: A Comprehensive UI framework for Developers</h1>
                                 <div className='w-40 flex flex-row space-x-1'>
@@ -150,7 +144,7 @@ export const Blogs = () => {
                             </div>
 
                         </div>
-                        {/* </div> */}
+
                     </>
                     )
                 }
