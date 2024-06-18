@@ -127,7 +127,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
               We partner with businesses to navigate the ever-changing digital landscape, transforming their ambitions into reality.
             </div>
 
-            <button className="bg-blue-600 text-white w-32 sm:w-40 py-2 sm:py-3 rounded-3xl hover:bg-blue-500 transition duration-300 z-10">
+            <button className="bg-blue-600 text-white w-32 sm:w-40 py-2 sm:py-3 rounded-3xl hover:bg-blue-500 transition duration-300 z-10" onClick={ContactUs}>
               Get Started
             </button>
             <div className='grid grid-rows-8 grid-flow-col gap-3 -ml-[52px] absolute top-[455px]  z-0 '  >
