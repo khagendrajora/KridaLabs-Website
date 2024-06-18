@@ -14,6 +14,7 @@ export const ContactUS = () => {
     const email = formData.get('email')?.toString();
     const message = formData.get('message')?.toString();
     if (!name || !email || !message || !name.trim() || !email.trim() || !message.trim()) {
+      setIsSending(false);
       toast.error("Please fill in all the fields!");
       return;
     }
