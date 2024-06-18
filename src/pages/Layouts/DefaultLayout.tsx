@@ -54,7 +54,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
 
   const renderGridElements = () => {
     const elements: React.ReactNode[] = []
-    for (let i = 0; i < 220; i++) {
+    for (let i = 0; i < 192; i++) {
       elements.push(<div key={i} className='bg-gray-100 w-2 h-2 rounded'></div>)
     }
     return elements
@@ -112,12 +112,16 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
             </h1>
             <p className=" sm:text-xl mb-4 max-w-lg">
               Welcome to KridaLabs
-              <br />
-              At KridaLabs, we're obsessed with unlocking the potential of technology. We're a team of passionate innovators shaping the future by crafting cutting-edge solutions that propel businesses forward.  We partner with businesses to navigate the ever-changing digital landscape, transforming their ambitions into reality.</p>
+            </p>
+            <div>
+
+              We partner with businesses to navigate the ever-changing digital landscape, transforming their ambitions into reality.
+            </div>
+
             <button className="bg-blue-600 text-white w-32 sm:w-40 py-2 sm:py-3 rounded-3xl hover:bg-blue-500 transition duration-300 z-10">
               Get Started
             </button>
-            <div className='grid grid-rows-8 grid-flow-col gap-3 -ml-[52px] absolute top-[430px]  z-0 '  >
+            <div className='grid grid-rows-8 grid-flow-col gap-3 -ml-[52px] absolute top-[455px]  z-0 '  >
               {renderGridElements()}
             </div>
           </div>

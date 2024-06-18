@@ -2,7 +2,7 @@
 export const ClientView = () => {
     return (
         <>
-            <div className='flex flex-col pt-10 px-6 space-y-4 lg:items-center'>
+            <div className='flex flex-col pt-10 px-6 space-y-4 lg:items-center hidden'>
                 <h1 className=' text-2xl font-bold lg:mx-auto lg:text-4xl'> What our happy client say</h1>
                 <p className='text-gray-400 text-justify'>Several selected clients who already believe in our service</p>
                 <div className='flex flex-col items-start space-y-5 px-3 lg:items-center '>
