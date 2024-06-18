@@ -1,6 +1,16 @@
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
+  const Service = () => {
+    const service = document.getElementById('services')
+    if (service) {
+      window.scrollTo({
+        top: service.offsetTop,
+        behavior: 'smooth'
+      })
+    }
+  }
   return (
     <footer className="bg-white text-black py-1 px-1 xl:mx-[120px] mt-4"> {/* Set padding-left and padding-right to 120px */}
       {/* Separator Line */}
@@ -11,22 +21,23 @@ export default function Footer() {
 
 
       {/* Center Section */}
-      <div className="flex flex-row flex-wrap justify-between  space-y-3  ">
+      <div className="flex flex-row flex-wrap justify-between  space-y-3 px-5 lg:px-5 xl:px-0  ">
         <div className=" lg:w-1/3 flex flex-col space-y-2 mt-3 ">
           <div className='flex items-center'>
             <img src='/logo.svg' className='pe-2 w-[80px] ' />
             <h2 className="text-2xl font-bold">KridaLabs</h2>
           </div>
 
-          <p className="text-[10px] text-justify">Discover how we’ve helped startups like yours transform their ideas into thriving ventures. From concept to execution, our innovative solutions have driven incredible results.</p>
+          <p className="text-[10px] text-justify lg:w-52 xl:w-96">Discover how we’ve helped startups like yours transform their ideas into thriving ventures. From concept to execution, our innovative solutions have driven incredible results.</p>
         </div>
         {/* What We Do Section */}
+
         <div className="lg:w-auto flex flex-col justify-center space-y-2 items-start me-2 ">
-          <h2 className="text-2xl font-bold">What We Do</h2>
+          <h2 className="text-2xl font-bold" onClick={Service}>What We Do</h2>
           <ul className="text-[10px] space-y-1">
-            <li><a href="#" className="hover:underline ">Web Design</a></li>
-            <li><a href="#" className="hover:underline">App Design</a></li>
-            <li><a href="#" className="hover:underline ">Social Media Manage</a></li>
+            <li><Link to='' className="hover:underline" onClick={Service}>Web Design</Link></li>
+            <li><Link to='' className="hover:underline" onClick={Service}>App Design</Link></li>
+            <li><Link to='' className="hover:underline" onClick={Service}>Social Media Manage</Link></li>
           </ul>
         </div>
 

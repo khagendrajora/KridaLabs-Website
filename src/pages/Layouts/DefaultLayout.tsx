@@ -105,7 +105,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
             </nav>
           )}
         </header>
-        <section className="sm:hidden  lg:hidden xl:flex xl:flex-row xl:justify-between xl:mx-[120px] ">
+        <section className="sm:hidden lg:flex lg:px-10 lg:mb-10 lg:flex-row lg:justify-center  xl:flex xl:flex-row xl:justify-between xl:mx-[120px] ">
           <div className="flex flex-col  space-y-4 justify-center ">
             <h1 className="text-4xl  font-bold mb-4 ">
               Pioneering  <br />Tomorrow's Technology
@@ -133,7 +133,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
               }}
             ></div>
             <div
-              className="absolute top-[150px] sm:top-[370px] left-[50%] transform translate-x-[-50%] sm:translate-x-0 sm:left-[396px] bg-yellow-200 w-[178px] h-[178px] z-0"
+              className="absolute top-[150px] sm:top-[370px] xl:left-[50%] lg:left-[20%]  transform translate-x-[-50%]  sm:translate-x-0  bg-yellow-200 w-[178px] h-[178px] z-0"
               style={{
                 borderBottomRightRadius: '50%',
                 zIndex: 0,

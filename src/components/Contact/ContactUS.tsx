@@ -12,7 +12,7 @@ export const ContactUS = () => {
                 </div>
                 <div className="px-10 lg:w-1/2 xl:w-1/3 lg:flex-col  lg:space-y-4 ">
                     <h1 className=' text-4xl font-bold'>Contact Us</h1>
-                    <p className='text-gray-400 text-justify  '>Get in touch us to kickstart your ideas.</p>
+                    <p className='text-gray-400 text-justify my-5  '>Get in touch us to kickstart your ideas.</p>
                     <form className='space-y-4'>
                         <input type='text' placeholder='Your Email' className='p-3 pl-7 text-black bg-blue-100 rounded-md w-full' />
                         <input type='text' placeholder='Name' className='p-3 pl-7 text-black bg-blue-100 rounded-lg w-full' />
