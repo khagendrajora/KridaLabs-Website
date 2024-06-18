@@ -29,7 +29,7 @@ export default function Footer() {
               <h2 className="text-2xl font-bold">KridaLabs</h2>
             </div>
 
-            <p className="text-[10px] text-justify lg:w-52 xl:w-96">Discover how we’ve helped startups like yours transform their ideas into thriving ventures. From concept to execution, our innovative solutions have driven incredible results.</p>
+            <p className="text-[12px] text-justify lg:w-52 xl:w-96">Discover how we’ve helped startups like yours transform their ideas into thriving ventures. From concept to execution, our innovative solutions have driven incredible results.</p>
           </div>
           {/* What We Do Section */}
 

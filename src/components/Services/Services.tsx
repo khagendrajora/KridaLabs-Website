@@ -18,7 +18,7 @@ export const Services = () => {
             <div className='w-full lg:hidden xl:flex  flex-col py-12 p-5 space-y-2 xl:flex-row  '>
                 <div className='left  sm:hidden lg:hidden xl:p-7 xl:w-1/4 xl:z-20 xl:flex xl:flex-row xl:items-center   '>
                     <div className=' bg-servicesLeft p-5 w-40 h-36  space-y-10 rounded-tl-[90px]'>
-                        <h1 className='text-4xl text-wrap w-80 ml-[52px] m-auto z-10'>How we can help you</h1>
+                        <h1 className='text-4xl text-wrap w-80 ml-[52px] m-auto z-10 font-semibold'>How we can help your Business </h1>
                         <p className='w-[450px] ml-[52px] '>
                             {/* <ul className="list-disc list-inside">
                                 <li><strong>Conceptualization:</strong> Refining your business idea to align with market needs.</li>
@@ -37,8 +37,8 @@ export const Services = () => {
                 <div className='lg:hidden flex flex-wrap space-x-4 justify-center space-y-4'>
                     <div className='card bg-white  rounded-3xl z-10 w-[250px] flex flex-col justify-start space-y-3 items-center p-10 shadow-md'>
                         <div className='bg-white p-4 rounded-2xl mb-5 '><FontAwesomeIcon icon={faCube} size='4x' /></div>
-                        <div className='text-3xl m-auto w-[210px] font-semibold'>Software Development</div>
-                        <p className='m-auto w-[190px] text-gray-600'>Agile and scalable solutions tailored to your startup’s unique needs.</p>
+                        <div className='text-3xl m-auto w-[210px] font-semibold'>Graphics and Design</div>
+                        <p className='m-auto w-[190px] text-gray-600'>Attractive designs and solutions tailored to your unique needs.</p>
                     </div>
                     <div className='card bg-white  rounded-3xl z-10 w-[250px] flex flex-col justify-start space-y-3 items-center p-10 shadow-md'>
                         <div className='bg-yellow-300 p-4 rounded-2xl mb-5 '><FontAwesomeIcon icon={faCube} size='4x' /></div>
@@ -64,8 +64,8 @@ export const Services = () => {
                             <div className='flex flex-col space-y-3 -mt-10 xxxl:w-auto'>
                                 <div className='card bg-white  rounded-3xl z-10 w-[250px] flex flex-col justify-start space-y-3 items-center p-10 shadow-2xl'>
                                     <div className='bg-white p-4 rounded-2xl mb-5 '><FontAwesomeIcon icon={faCube} size='4x' /></div>
-                                    <div className='text-3xl m-auto w-[210px] font-semibold'>Software Development</div>
-                                    <p className='m-auto w-[190px] text-gray-600'>Agile and scalable solutions tailored to your startup’s unique needs.</p>
+                                    <div className='text-3xl m-auto w-[210px] font-semibold'>Graphics and Design</div>
+                                    <p className='m-auto w-[190px] text-gray-600'>Attractive designs and solutions tailored to your unique needs.</p>
                                 </div>
                                 <div className='card bg-white  rounded-3xl z-10 w-[250px] flex flex-col justify-start space-y-3 items-center p-10 shadow-2xl'>
                                     <div className='bg-yellow-300 p-4 rounded-2xl mb-5 '><FontAwesomeIcon icon={faCube} size='4x' /></div>

@@ -117,13 +117,13 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
         </header>
         <section className="sm:hidden lg:flex lg:px-10 lg:mb-10 lg:flex-row lg:justify-center z-0 xl:flex xl:flex-row xl:justify-between xl:mx-[120px]  ">
           <div className="flex flex-col  space-y-4 justify-center ">
-            <h1 className="text-4xl  font-bold mb-4 ">
-              Pioneering  <br />Tomorrow's Technology
+            <h1 className="text-4xl  font-bold mb-2  ">
+              <span className='text-red-500 text-5xl'>Pioneering </span> <br />Tomorrow's Technology
             </h1>
-            <p className=" sm:text-xl mb-4 max-w-lg">
-              Welcome to KridaLabs
+            <p className=" sm:text-2xl font-bold mb-4 max-w-lg ">
+              Welcome to <span className='text-indigo-500 text-3xl'>KridaLabs</span>
             </p>
-            <div>
+            <div className='font-semibold'>
 
               We partner with businesses to navigate the ever-changing digital landscape, transforming their ambitions into reality.
             </div>
@@ -164,8 +164,16 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
           </div>
         </section>
         <section className='p-6 space-y-5 lg:hidden xl:hidden'>
-          <div className='text-black font-extrabold flex justify-center text-wrap text-3xl'>A Digital Product Agency</div>
-          <div className='text-gray-400 text-wrap'>Leading digital agency with solid design and development expertise. We build readymade website, mobile application and elaborate online business services</div>
+          <div className='text-black font-extrabold flex justify-center text-wrap text-3xl'> <h1 className="text-4xl  font-bold mb-4 ">
+              <span className='text-red-500 text-5xl'>Pioneering </span> <br />Tomorrow's Technology
+            </h1></div>
+          <div className='text-gray-400 text-wrap'> <p className=" sm:text-2xl font-bold mb-4 max-w-lg text-indigo-500">
+              Welcome to KridaLabs
+            </p>
+            <div>
+
+              We partner with businesses to navigate the ever-changing digital landscape, transforming their ambitions into reality.
+            </div></div>
           <button className="bg-blue-600 text-white w-28 p-2  rounded-3xl hover:bg-blue-500 transition duration-300" onClick={ContactUs}>
             Get Started
           </button>
