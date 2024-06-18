@@ -11,6 +11,15 @@ export default function Footer() {
       })
     }
   }
+  const ContactUs = () => {
+    const contactus = document.getElementById("contactUs");
+    if (contactus) {
+      window.scrollTo({
+        top: contactus.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     
       <footer className="bg-white text-black py-1 px-1 xl:mx-[120px] mt-4"> {/* Set padding-left and padding-right to 120px */}
@@ -64,7 +73,7 @@ export default function Footer() {
           <div className="flex flex-col justify-center space-y-2 items-start w-[106px] me-2 xl:me-0">
             <h2 className="text-2xl font-bold">Contact</h2>
             <ul className="space-y-1 text-[10px]">
-              <li><a href="#" className="hover:underline">Email Us</a></li>
+              <li><a onClick={ContactUs} className="hover:underline">Email Us</a></li>
               <li><a href="#" className="hover:underline">Whatsapp</a></li>
               <li><a href="#" className="hover:underline">Support Chat</a></li>
             </ul>
