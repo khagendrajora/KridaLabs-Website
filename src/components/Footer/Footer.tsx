@@ -1,4 +1,4 @@
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -18,7 +18,7 @@ export default function Footer() {
             <h2 className="text-2xl font-bold">KridaLabs</h2>
           </div>
 
-          <p className="text-[10px] text-justify">Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</p>
+          <p className="text-[10px] text-justify">Discover how we’ve helped startups like yours transform their ideas into thriving ventures. From concept to execution, our innovative solutions have driven incredible results.</p>
         </div>
         {/* What We Do Section */}
         <div className="lg:w-auto flex flex-col justify-center space-y-2 items-start me-2 ">
@@ -64,13 +64,13 @@ export default function Footer() {
 
       {/* Social Media Icons Section */}
       <div className="flex justify-center space-x-4 mt-10"> {/* Added margin-top to create a gap */}
-        <a href="#" className="text-black hover:text-gray-600">
+        <a href="https://www.facebook.com/kridalabs" target="_blank" className="text-black hover:text-gray-600">
           <FaFacebookF size={24} /> {/* Increased size */}
         </a>
-        <a href="#" className="text-black hover:text-gray-600">
-          <FaTwitter size={24} /> {/* Increased size */}
+        <a href="https://www.linkedin.com/company/kridalabs" target="_blank" className="text-black hover:text-gray-600">
+          <FaLinkedinIn size={24} /> {/* Increased size */}
         </a>
-        <a href="#" className="text-black hover:text-gray-600">
+        <a href="https://www.instagram.com/kridalabs/" target="_blank" className="text-black hover:text-gray-600">
           <FaInstagram size={24} /> {/* Increased size */}
         </a>
       </div>
