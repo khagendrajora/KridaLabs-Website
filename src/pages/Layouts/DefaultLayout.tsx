@@ -72,11 +72,11 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
             </div>
             <nav className="sm:hidden lg:hidden xl:block  xl:me-24">
               <ul className="flex space-x-12 text-lg">
-                <li><a href="#" className="hover:text-gray-400">Home</a></li>
-                <li><a href="#" className="hover:text-gray-400" onClick={Service}>Services</a></li>
-                <li><a href="#" className="hover:text-gray-400" onClick={Project}>Project</a></li>
-                <li><a href="#" className="hover:text-gray-400" onClick={Blog}>Blog</a></li>
-                <li><a href="#" className="hover:text-gray-400" onClick={ContactUs}>Contact</a></li>
+                <li><a className="hover:text-gray-400">Home</a></li>
+                <li><a className="hover:text-gray-400" onClick={Service}>Services</a></li>
+                <li><a className="hover:text-gray-400" onClick={Project}>Project</a></li>
+                <li><a className="hover:text-gray-400" onClick={Blog}>Blog</a></li>
+                <li><a className="hover:text-gray-400" onClick={ContactUs}>Contact</a></li>
               </ul>
             </nav>
             {!menuOpen ? (
