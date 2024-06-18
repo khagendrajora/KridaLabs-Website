@@ -127,7 +127,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
               We partner with businesses to navigate the ever-changing digital landscape, transforming their ambitions into reality.
             </div>
 
-            <button className="bg-blue-600 text-white w-32 sm:w-40 py-2 sm:py-3 rounded-3xl hover:bg-blue-500 transition duration-300 z-10">
+            <button className="bg-blue-600 text-white w-32 sm:w-40 py-2 sm:py-3 rounded-3xl hover:bg-blue-500 transition duration-300 z-10" onClick={ContactUs}>
               Get Started
             </button>
             <div className='grid grid-rows-8 grid-flow-col gap-3 -ml-[52px] absolute top-[455px]  z-0 '  >
@@ -165,8 +165,8 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
         <section className='p-6 space-y-5 lg:hidden xl:hidden'>
           <div className='text-black font-extrabold flex justify-center text-wrap text-3xl'>A Digital Product Agency</div>
           <div className='text-gray-400 text-wrap'>Leading digital agency with solid design and development expertise. We build readymade website, mobile application and elaborate online business services</div>
-          <button className="bg-blue-600 text-white w-28 p-2  rounded-3xl hover:bg-blue-500 transition duration-300">
-            Contact Now
+          <button className="bg-blue-600 text-white w-28 p-2  rounded-3xl hover:bg-blue-500 transition duration-300" onClick={ContactUs}>
+            Get Started
           </button>
           <img src='/image 8.png' className='w-full' />
         </section>
