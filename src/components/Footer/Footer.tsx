@@ -12,8 +12,8 @@ export default function Footer() {
     }
   }
   return (
-    <div className="xl:flex xl:justify-center">
-      <footer className="bg-white text-black py-1 px-1 xl:mx-[120px] mt-4 xl:w-[1280px]"> {/* Set padding-left and padding-right to 120px */}
+    
+      <footer className="bg-white text-black py-1 px-1 xl:mx-[120px] mt-4"> {/* Set padding-left and padding-right to 120px */}
         {/* Separator Line */}
         <hr className="border-t-2 border-gray-200" /> {/* Horizontal line */}
 
@@ -94,6 +94,6 @@ export default function Footer() {
           Copyright © 2024 KridaLabs. All rights reserved.
         </div>
       </footer>
-    </div>
+    
   );
 }
