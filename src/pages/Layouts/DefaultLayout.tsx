@@ -165,8 +165,8 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
         <section className='p-6 space-y-5 lg:hidden xl:hidden'>
           <div className='text-black font-extrabold flex justify-center text-wrap text-3xl'>A Digital Product Agency</div>
           <div className='text-gray-400 text-wrap'>Leading digital agency with solid design and development expertise. We build readymade website, mobile application and elaborate online business services</div>
-          <button className="bg-blue-600 text-white w-28 p-2  rounded-3xl hover:bg-blue-500 transition duration-300">
-            Contact Now
+          <button className="bg-blue-600 text-white w-28 p-2  rounded-3xl hover:bg-blue-500 transition duration-300" onClick={ContactUs}>
+            Get Started
           </button>
           <img src='/image 8.png' className='w-full' />
         </section>
