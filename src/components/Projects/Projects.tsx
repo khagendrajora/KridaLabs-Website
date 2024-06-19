@@ -4,7 +4,7 @@ export const Projects = () => {
     return (
         <>
             <div id="projects"></div>
-            <div className='px-6 flex justify-center flex-col lg:hidden'>
+            <div className='px-6 flex justify-center hidden flex-col lg:hidden'>
                 <h1 className=' text-2xl font-bold'>Projects</h1>
                 <p className='text-gray-400'>Some of the tailored projects.</p>
                 <div className='flex flex-col items-center mt-7 space-y-3'>

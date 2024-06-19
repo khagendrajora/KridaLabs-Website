@@ -7,12 +7,24 @@ export const Blogs = () => {
     const [blogs, setBlogs] = useState(false)
     const [blogt, setBlogt] = useState(false)
     const handleClickFirst = () => {
+        if (blogs || blogt) {
+            setBlogs(false)
+            setBlogt(false)
+        }
         setBlogf(!blogf)
     }
     const handleClickSecond = () => {
+        if (blogf || blogt) {
+            setBlogf(false)
+            setBlogt(false)
+        }
         setBlogs(!blogs)
     }
     const handleClickThird = () => {
+        if (blogf || blogs) {
+            setBlogf(false)
+            setBlogs(false)
+        }
         setBlogt(!blogt)
     }
     return (
@@ -24,7 +36,7 @@ export const Blogs = () => {
 
                     (
                         <>
-                            <div className='lg:h-[800px] xl:h-[600px]'>
+                            <div className='lg:h-[500px] xl:h-[600px]'>
 
 
                                 <div className='mb-10   lg:relative'>
@@ -43,8 +55,8 @@ export const Blogs = () => {
                                                 </div>
                                             </div>
                                             {blogf &&
-                                                <div className=' lg:absolute h-auto'>
-                                                    <p className='text-gray-400 text-justify w-80 lg:mb-20 px-1 lg:w-60   xl:w-80' >Material-UI is a popular React UI framework that implements Google's Material Design. It offers a robust and customizable set of components, making it an excellent choice for building modern web applications. In this blog post, we will explore the essentials of Material-UI, best practices for implementation, and some advanced tips to help you get the most out of this powerful library.</p>
+                                                <div className=' lg:absolute lg:mt-1 h-auto'>
+                                                    <p className='text-gray-400 text-justify  lg:mb-20 px-1 lg:w-[500px]' >Material-UI is a popular React UI framework that implements Google's Material Design. It offers a robust and customizable set of components, making it an excellent choice for building modern web applications. In this blog post, we will explore the essentials of Material-UI, best practices for implementation, and some advanced tips to help you get the most out of this powerful library.</p>
                                                 </div>
 
                                             }
@@ -62,9 +74,8 @@ export const Blogs = () => {
                                                 </div>
                                             </div>
                                             {blogs &&
-                                                <div className='lg:mb-40 lg:absolute h-auto'>
-
-                                                    <p className='text-gray-400 text-justify w-80 px-1 lg:mb-10  lg:w-60  xl:w-80'>Technology has profoundly influenced almost every aspect of our daily lives, revolutionizing the way we communicate, work, and live. From the internet to artificial intelligence, technological advancements continue to shape our world in unprecedented ways.</p>
+                                                <div className=' lg:absolute lg:mt-1 h-auto'>
+                                                    <p className='text-gray-400 text-justify  lg:mb-20 px-1 lg:w-[500px]' >Material-UI is a popular React UI framework that implements Google's Material Design. It offers a robust and customizable set of components, making it an excellent choice for building modern web applications. In this blog post, we will explore the essentials of Material-UI, best practices for implementation, and some advanced tips to help you get the most out of this powerful library.</p>
                                                 </div>
 
                                             }
@@ -81,9 +92,8 @@ export const Blogs = () => {
                                                 </div>
                                             </div>
                                             {blogt &&
-                                                <div className='lg:mb-20 lg:absolute h-auto'>
-
-                                                    <p className='text-gray-400 text-justify w-80 px-1 lg:mb-10  lg:w-60  xl:w-80'>Staying updated with essential technologies is crucial for personal and professional growth. Key technologies to be aware of include Artificial Intelligence (AI) and Machine Learning (ML) for intelligent decision-making, Cloud Computing for scalable and flexible resources, and Cybersecurity to protect data. The Internet of Things (IoT) connects devices for smarter environments, while Blockchain ensures secure transactions. Augmented Reality (AR) and Virtual Reality (VR) create immersive experiences, and 5G technology enhances connectivity with faster speeds and lower latency</p>
+                                                <div className=' lg:absolute lg:mt-1 h-auto'>
+                                                    <p className='text-gray-400 text-justify  lg:mb-20 px-1 lg:w-[450px] xl:w-[500px] lg:-ml-[200px] xl:-ml-[100px]' >Staying updated with essential technologies is crucial for personal and professional growth. Key technologies to be aware of include Artificial Intelligence (AI) and Machine Learning (ML) for intelligent decision-making, Cloud Computing for scalable and flexible resources, and Cybersecurity to protect data. The Internet of Things (IoT) connects devices for smarter environments, while Blockchain ensures secure transactions. Augmented Reality (AR) and Virtual Reality (VR) create immersive experiences, and 5G technology enhances connectivity with faster speeds and lower latency.</p>
                                                 </div>
 
                                             }
@@ -106,8 +116,8 @@ export const Blogs = () => {
                                     </div>
                                 </div>
                                 {blogf &&
-                                    <div className='h-auto'>
-                                        <p className='text-gray-400 text-justify px-1 lg:w-60  xl:w-80 absolute'>Material-UI is a popular React UI framework that implements Google's Material Design. It offers a robust and customizable set of components, making it an excellent choice for building modern web applications. In this blog post, we will explore the essentials of Material-UI, best practices for implementation, and some advanced tips to help you get the most out of this powerful library.</p>
+                                    <div className='lg:h-[500px] xl:h-[400px]'>
+                                        <p className='text-gray-400 text-justify px-1 absolute'>Material-UI is a popular React UI framework that implements Google's Material Design. It offers a robust and customizable set of components, making it an excellent choice for building modern web applications. In this blog post, we will explore the essentials of Material-UI, best practices for implementation, and some advanced tips to help you get the most out of this powerful library.</p>
                                     </div>
 
                                 }
@@ -123,8 +133,8 @@ export const Blogs = () => {
                                     </div>
                                 </div>
                                 {blogs &&
-                                    <div className=' '>
-                                        <p className='text-gray-400 text-justify px-1 lg:w-60  xl:w-80 absolute'>Technology has profoundly influenced almost every aspect of our daily lives, revolutionizing the way we communicate, work, and live. From the internet to artificial intelligence, technological advancements continue to shape our world in unprecedented ways.</p>
+                                    <div className='lg:h-[500px] xl:h-[400px] '>
+                                        <p className='text-gray-400 text-justify px-1  absolute'>Technology has profoundly influenced almost every aspect of our daily lives, revolutionizing the way we communicate, work, and live. From the internet to artificial intelligence, technological advancements continue to shape our world in unprecedented ways.</p>
                                     </div>
                                 }
                             </div>
@@ -139,8 +149,8 @@ export const Blogs = () => {
                                     </div>
                                 </div>
                                 {blogt &&
-                                    <div className='h-auto'>
-                                        <p className='text-gray-400 text-justify px-1 lg:w-60  xl:w-80 absolute'>Staying updated with essential technologies is crucial for personal and professional growth. Key technologies to be aware of include Artificial Intelligence (AI) and Machine Learning (ML) for intelligent decision-making, Cloud Computing for scalable and flexible resources, and Cybersecurity to protect data. The Internet of Things (IoT) connects devices for smarter environments, while Blockchain ensures secure transactions. Augmented Reality (AR) and Virtual Reality (VR) create immersive experiences, and 5G technology enhances connectivity with faster speeds and lower latency</p>
+                                    <div className='lg:h-[500px] lg:w-72 xl:h-[400px] '>
+                                        <p className='text-gray-400 text-justify px-1 absolute '>Staying updated with essential technologies is crucial for personal and professional growth. Key technologies to be aware of include Artificial Intelligence (AI) and Machine Learning (ML) for intelligent decision-making, Cloud Computing for scalable and flexible resources, and Cybersecurity to protect data. The Internet of Things (IoT) connects devices for smarter environments, while Blockchain ensures secure transactions. Augmented Reality (AR) and Virtual Reality (VR) create immersive experiences, and 5G technology enhances connectivity with faster speeds and lower latency</p>
                                     </div>
                                 }
                             </div>
