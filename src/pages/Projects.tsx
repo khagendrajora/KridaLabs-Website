@@ -106,13 +106,13 @@ const projects: Project[] = [
   {
     title: 'Quick Time Valero',
     description: 'Advancing the Future of Energy Through the Years ',
-    imageUrl: '/public/qtv.jpeg',
+    imageUrl: '/qtv.jpeg',
     url: 'http://quicktimevalero.com/',
   },
   {
     title: 'Knits & Stitches',
     description: 'A B2B ecommerce site for a local wool house in Nepal.',
-    imageUrl: '/public/k&s.jpeg',
+    imageUrl: '/k&s.jpeg',
     url: 'https://knitsandstitches.com/',
   },
 ];
