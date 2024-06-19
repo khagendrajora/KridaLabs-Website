@@ -8,7 +8,7 @@ import { ClientView } from '../../components/ClientView/ClientView';
 import { ContactUS } from '../../components/Contact/ContactUS';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import ProjectsList from '../Projects';
+import ProjectsList from '../Projects';
 
 export default function DefaultLayout({ children }: { children: ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -184,7 +184,7 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
           <Projects />
           <section className="flex p-5 justify-center">
             <h1 className="text-4xl  font-bold mb-4 ">Projects</h1>
-            {/* <ProjectsList /> */}
+            <ProjectsList />
           </section>
           <ClientView />
           <Blogs />
