@@ -97,12 +97,12 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
-    title: 'NDRRMA VMS',
-    description: 'A comprehensive Volunteer Management System designed for the NDRRMA, Government of Nepal, to efficiently coordinate and mobilize volunteers during disaster response. Streamlines volunteer registration, deployment, and activity tracking to enhance emergency management efforts.',
-    imageUrl: '/public/vms.jpeg',
-    url: 'https://vms.ndrrma.gov.np/',
-  },
+  // {
+  //   title: 'NDRRMA VMS',
+  //   description: 'A comprehensive Volunteer Management System designed for the NDRRMA, Government of Nepal, to efficiently coordinate and mobilize volunteers during disaster response. Streamlines volunteer registration, deployment, and activity tracking to enhance emergency management efforts.',
+  //   imageUrl: '/public/vms.jpeg',
+  //   url: 'https://vms.ndrrma.gov.np/',
+  // },
   {
     title: 'Quick Time Valero',
     description: 'Advancing the Future of Energy Through the Years ',

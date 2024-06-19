@@ -182,8 +182,8 @@ export default function DefaultLayout({ children }: { children: ReactNode }) {
           </section>
           <Services />
           <Projects />
-          <section className="flex p-5 justify-center">
-            <h1 className="text-4xl  font-bold mb-4 ">Projects</h1>
+          <section className="flex p-5 justify-center flex-col">
+            <h1 className="text-4xl flex items-center flex-col font-bold mb-4 ">Projects</h1>
             <ProjectsList />
           </section>
           <ClientView />
