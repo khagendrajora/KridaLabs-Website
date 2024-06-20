@@ -18,7 +18,7 @@ export const Services = () => {
             <div className='w-full  xl:flex  flex-col py-12 p-5 space-y-2 xl:flex-row  '>
                 <div className='left  sm:hidden lg:hidden xl:p-7 xl:w-1/4 xl:z-20 xl:flex xl:flex-row xl:items-center   '>
                     <div className=' bg-servicesLeft p-5 w-40 h-36  space-y-10 rounded-tl-[90px]'>
-                        <h1 className='text-4xl text-wrap w-80 ml-[52px] m-auto z-10'>How we can help you</h1>
+                        <h1 className='text-4xl text-wrap w-80 ml-[52px] m-auto z-10 font-semibold'>Discover how we can support your goal.</h1>
                         <p className='w-[450px] ml-[52px] '></p>
                         <div className='grid grid-rows-8 grid-flow-col gap-3 ml-[52px] z-0'  >
                             {renderGridElements()}

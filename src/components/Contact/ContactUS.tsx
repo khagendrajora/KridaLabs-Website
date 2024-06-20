@@ -52,7 +52,7 @@ export const ContactUS = () => {
           <form className='space-y-4' onSubmit={handleSubmit}>
             <input type='text' name='email' placeholder='Your Email' className='p-3 pl-7 text-black bg-blue-100 rounded-md w-full' />
             <input type='text' name='name' placeholder='Name' className='p-3 pl-7 text-black bg-blue-100 rounded-lg w-full' />
-            <textarea typeof='text' name='message' placeholder='message' cols={3} rows={5} className='p-3 pl-7 text-black bg-blue-100 rounded-lg w-full' />
+            <textarea typeof='text' name='message' placeholder='Message' cols={3} rows={5} className='p-3 pl-7 text-black bg-blue-100 rounded-lg w-full' />
             <button className="flex items-center bg-blue-700 text-white xl:text-[20px] text-[20px] lg:text-[15px] lg:p-4 font-bold p-5 px-[40px] rounded-[60px] hover:bg-blue-500 transition duration-300" type='submit'>
               {isSending && <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
