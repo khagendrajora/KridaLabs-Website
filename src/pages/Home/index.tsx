@@ -5,6 +5,8 @@ import Blog from "../../components/Blog/Blog";
 import Contact from "../../components/Contact/Contact";
 import ProjectsList from "../../components/Projects/ProjectsList";
 import { scrollTo } from "../../utils";
+import Button from "../../components/Button/Button";
+import Testimonials from "../../components/Testimonials/Testimonials";
 
 export default function Home() {
   const renderGridElements = () => {
@@ -30,9 +32,9 @@ export default function Home() {
             We partner with businesses to navigate the ever-changing digital landscape, transforming their ambitions into reality.
           </div>
 
-          <button className="bg-blue-600 text-white w-32 sm:w-40 py-2 sm:py-3 rounded-3xl hover:bg-blue-500 transition duration-300 z-10" onClick={() => scrollTo("contactUs")}>
+          <Button variant="primary" onClick={() => scrollTo("contactUs")}>
             Get Started
-          </button>
+          </Button>
           <div className="grid grid-rows-8 grid-flow-col gap-3 -ml-[52px] absolute top-[455px]  z-0 "  >
             {renderGridElements()}
           </div>
@@ -76,7 +78,7 @@ export default function Home() {
 
             We partner with businesses to navigate the ever-changing digital landscape, transforming their ambitions into reality.
           </div></div>
-        <button className="bg-blue-600 text-white w-28 p-2  rounded-3xl hover:bg-blue-500 transition duration-300" onClick={ContactUs}>
+        <button className="bg-blue-600 text-white w-28 p-2  rounded-3xl hover:bg-blue-500 transition duration-300" onClick={() => scrollTo("contactUs")}>
           Get Started
         </button>
         <img src="/image 8.png" className="w-full" />
@@ -87,9 +89,9 @@ export default function Home() {
         <h1 className="text-4xl flex items-center flex-col font-bold mb-4 ">Projects</h1>
         <ProjectsList />
       </section>
-      <ClientView />
+      <Testimonials />
       <Blog />
-      <ContactUS />
+      <Contact />
     </DefaultLayout>
   );
 }

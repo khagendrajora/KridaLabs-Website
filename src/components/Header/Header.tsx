@@ -1,42 +1,13 @@
 import { useState } from "react";
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { scrollTo } from "../../utils";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-  };
-
-  const Project = () => {
-    const project = document.getElementById('projects')
-    if (project) {
-      window.scrollTo({
-        top: project.offsetTop,
-        behavior: 'smooth'
-      })
-    }
-  };
-
-  const Blog = () => {
-    const blog = document.getElementById('blogs')
-    if (blog) {
-      window.scrollTo({
-        top: blog.offsetTop,
-        behavior: 'smooth'
-      })
-    }
-  };
-
-  const ContactUs = () => {
-    const contactus = document.getElementById('contactUs')
-    if (contactus) {
-      window.scrollTo({
-        top: contactus.offsetTop,
-        behavior: 'smooth'
-      })
-    }
   };
 
   return (
@@ -49,10 +20,10 @@ export default function Header() {
         <nav className="sm:hidden lg:hidden xl:block  xl:me-24">
           <ul className="flex space-x-12 text-lg">
             <li><a className="hover:text-gray-400">Home</a></li>
-            <li><a className="hover:text-gray-400" onClick={Service}>Services</a></li>
-            <li><a className="hover:text-gray-400" onClick={Project}>Project</a></li>
-            <li><a className="hover:text-gray-400" onClick={Blog}>Blog</a></li>
-            <li><a className="hover:text-gray-400" onClick={ContactUs}>Contact</a></li>
+            <li><a className="hover:text-gray-400" onClick={() => scrollTo("services")}>Services</a></li>
+            <li><a className="hover:text-gray-400" onClick={() => scrollTo("projects")}>Project</a></li>
+            <li><a className="hover:text-gray-400" onClick={() => scrollTo("blogs")}>Blog</a></li>
+            <li><a className="hover:text-gray-400" onClick={() => scrollTo("contactUs")}>Contact</a></li>
           </ul>
         </nav>
         {!menuOpen ? (

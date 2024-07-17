@@ -11,9 +11,7 @@ export default function Projects() {
           <p className='text-gray-400 text-justify px-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos earum, autem aspernatur aliquid exercitationem quae deserunt placeat maiores, ullam reiciendis pariatur delectus incidunt neque blanditiis odit cupiditate voluptas dicta consectetur!</p>
 
         </div>
-
       </div>
-
     </>
   )
 }
