@@ -19,23 +19,22 @@ export default function Home() {
 
   return (
     <DefaultLayout>
-      <section className="sm:hidden lg:flex lg:px-10 lg:mb-10 lg:flex-row lg:justify-center z-0 xl:flex xl:flex-row xl:justify-between xl:mx-[120px]  ">
-        <div className="flex flex-col  space-y-4 justify-center ">
-          <h1 className="text-4xl  font-bold mb-2  ">
+      <section className="sm:hidden lg:flex lg:px-10 lg:mb-10 lg:justify-center xl:justify-between">
+        <div className="flex flex-col gap-4 justify-center ">
+          <h1 className="text-4xl font-bold mb-2">
             <span className="text-red-500 text-5xl">Pioneering </span> <br />Tomorrow"s Technology
           </h1>
           <p className=" sm:text-2xl font-bold mb-4 max-w-lg ">
             Welcome to <span className="text-indigo-500 text-3xl">KridaLabs</span>
           </p>
-          <div className="font-semibold">
-
+          <div className="font-semibold w-[400px] z-10">
             We partner with businesses to navigate the ever-changing digital landscape, transforming their ambitions into reality.
           </div>
 
           <Button variant="primary" onClick={() => scrollTo("contactUs")}>
             Get Started
           </Button>
-          <div className="grid grid-rows-8 grid-flow-col gap-3 -ml-[52px] absolute top-[455px]  z-0 "  >
+          <div className="grid grid-rows-8 grid-flow-col gap-3 -ml-[52px] absolute top-[455px] z-0"  >
             {renderGridElements()}
           </div>
         </div>
