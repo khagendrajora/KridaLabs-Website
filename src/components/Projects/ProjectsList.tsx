@@ -119,7 +119,7 @@ const projects: Project[] = [
 
 ];
 
-const ProjectsList: React.FC = () => {
+export default function ProjectsList() {
   return (
     <div style={styles.container}>
       {projects.map((project, index) => (
@@ -133,6 +133,4 @@ const ProjectsList: React.FC = () => {
       ))}
     </div>
   );
-};
-
-export default ProjectsList;
+}

@@ -9,16 +9,6 @@ export default function Header() {
     setMenuOpen(!menuOpen);
   };
 
-  const Service = () => {
-    const service = document.getElementById('services')
-    if (service) {
-      window.scrollTo({
-        top: service.offsetTop,
-        behavior: 'smooth'
-      })
-    }
-  };
-
   const Project = () => {
     const project = document.getElementById('projects')
     if (project) {
